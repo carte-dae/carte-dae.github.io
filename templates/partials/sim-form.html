@@ -1,0 +1,25 @@
+    <div id="sim-form" class="sim" role="group" aria-labelledby="sim-title" data-map-url="{{page:index}}" style="--holiday-suffix: '{{a:sim.form.holidaySuffix}}'; --vacation-suffix: '{{a:sim.form.vacationSuffix}}'">
+      <p class="sim-title" id="sim-title">{{t:sim.form.title}}</p>
+      <label class="sim-holiday"><input id="sim-holiday" type="checkbox"><span><strong>{{t:sim.form.holiday}}</strong><small>{{t:sim.form.holidayHelp}}</small></span></label>
+      <label class="sim-holiday"><input id="sim-vacation" type="checkbox"><span><strong>{{t:sim.form.vacation}}</strong><small>{{t:sim.form.vacationHelp}}</small></span></label>
+      <div class="sim-quick">
+        <button type="button" class="sim-go" data-day="0" data-time="22:00">{{t:sim.btn.sun22}}</button>
+        <button type="button" class="sim-go" data-day="3" data-time="03:00">{{t:sim.btn.wed3}}</button>
+        <button type="button" class="sim-go" data-day="6" data-time="15:00">{{t:sim.btn.sat15}}</button>
+        <button type="button" class="sim-go" data-day="2" data-time="10:00">{{t:sim.btn.tue10}}</button>
+      </div>
+      <details class="sim-custom">
+        <summary>{{t:sim.form.custom}}</summary>
+        <form id="sim-custom-form">
+          <label>{{t:sim.form.day}}
+            <select id="sim-day">
+              <option value="1">{{t:day.Mo}}</option><option value="2">{{t:day.Tu}}</option><option value="3">{{t:day.We}}</option>
+              <option value="4">{{t:day.Th}}</option><option value="5">{{t:day.Fr}}</option><option value="6">{{t:day.Sa}}</option><option value="0">{{t:day.Su}}</option>
+            </select>
+          </label>
+          <label>{{t:sim.form.time}} <input id="sim-time" type="time" value="22:00" required></label>
+          <button type="submit" class="sim-go">{{t:sim.form.go}}</button>
+        </form>
+      </details>
+      <p id="sim-error" class="sim-error" hidden>{{t:sim.form.error}}</p>
+    </div>

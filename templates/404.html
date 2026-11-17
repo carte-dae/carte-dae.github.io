@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{t:notfound.title}}</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#237F52">
+  <style>
+    :root { color-scheme: light dark; --bg: #fff; --fg: #1d1d1f; --muted: #555; --link: #1a5fb4; --alert-bg: #fdecea; --alert-border: #b00020; --btn: #237F52; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #17181a; --fg: #ececec; --muted: #aaa; --link: #7ab3ff; --alert-bg: #3a1c20; --alert-border: #ff6b7d; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+    main { max-width: 520px; margin: 0 auto; padding: 32px 16px; text-align: center; }
+    h1 { font-size: 1.5rem; line-height: 1.25; margin: 16px 0 8px; }
+    a { color: var(--link); }
+    .alert { background: var(--alert-bg); border-left: 5px solid var(--alert-border); padding: 12px 14px; border-radius: 6px; text-align: left; }
+    .go { display: inline-block; margin: 8px 0 24px; padding: 12px 22px; border-radius: 999px; background: var(--btn); color: #fff; font-weight: 700; text-decoration: none; }
+    .go:focus-visible, a:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+    .muted { color: var(--muted); font-size: .9rem; }
+    section + section { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--muted); }
+    .others ul { list-style: none; margin: 0; padding: 0; }
+    .others li { margin: 14px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg class="logo" width="96" height="96" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" rx="36" fill="#237F52"/><g transform="translate(-18.03 -63.13) scale(1.3708)"><path d="M138.4 108.0C132.2 109.8 126.7 116.8 124.9 124.9C137.2 121.0 127.8 149.3 137.3 157.4C132.5 157.9 130.0 166.9 124.3 166.0C118.8 165.6 116.5 160.4 111.8 162.3C104.6 155.2 94.6 168.2 98.7 174.6C84.0 172.4 65.6 172.4 54.8 162.5C63.0 152.4 58.5 144.6 61.1 134.6C71.2 148.5 54.8 118.7 51.6 112.8C55.1 111.2 38.5 106.0 29.2 102.2C31.3 100.2 32.7 98.2 30.5 97.9C25.0 92.9 47.2 91.7 49.0 94.4C54.1 95.6 52.8 93.3 57.9 94.5C57.3 91.9 55.4 85.0 54.2 81.0C56.1 81.7 57.9 80.2 59.5 81.1C58.8 86.8 68.7 86.3 71.9 84.7C75.6 84.1 85.2 65.7 93.3 63.4C108.6 77.5 118.9 83.2 143.0 90.2C140.4 95.2 136.5 102.3 138.4 108.0Z" style="fill:#fff"/><path d="M99.18 80.69l-16.278 33.427h20.638l-36.14 42.05 13.952-32.943h-20.056z" transform="translate(24.95 23.40) scale(0.82)" fill="#237F52"/></g></svg>
+{{notfound_blocks}}
+  </main>
+  <script>
+    // Cette page peut être servie à n'importe quelle profondeur d'adresse : on retrouve la racine du site.
+    // Sur GitHub Pages (adresse « pseudo.github.io/dépôt/ »), la racine est le premier segment du chemin.
+    (() => {
+      const first = location.pathname.split("/")[1];
+      const root = location.hostname.endsWith(".github.io") && first ? "/" + first + "/" : "/";
+      document.querySelectorAll("a[data-page]").forEach((a) => { a.href = root + a.dataset.page.replace(/^\.\//, ""); }); // un lien par langue
+    })();
+  </script>
+</body>
+</html>

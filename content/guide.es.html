@@ -1,0 +1,190 @@
+    <div class="title">{{partial:logo-anime}}<h1>{{t:guide.title}}</h1></div>
+
+    <p>Este sitio muestra en un <a href="{{page:index}}">mapa</a> la posición de los desfibriladores (DEA: <a href="#dae">¿qué es?</a>) de Francia y ofrece, en una <strong>ficha</strong>, todos los detalles conocidos de cada uno: dirección, horarios, estado probable, adaptación a los niños. También ofrece una <strong>búsqueda de urgencia</strong>, que sugiere los desfibriladores cercanos más adecuados a su situación y que también se puede usar <strong>en simulación</strong>, para entrenarse o prepararse con antelación. Este sitio es <strong>gratuito, <a href="#origine">bienintencionado</a> y sin compromiso</strong>. No es oficial y se ofrece tal cual, <strong>por cuenta y riesgo de la persona que lo utiliza</strong>.</p>
+    <p class="alert"><strong>En caso de parada cardíaca o de emergencia vital, llame primero al <a href="tel:112">112</a> o al <a href="tel:15">15</a> (SMS: <a href="sms:114">114</a>).</strong> Los servicios de emergencia le guían y pueden orientarle hacia un desfibrilador. Este sitio no los sustituye.</p>
+    <div class="sticky-zone">
+    {{partial:open-map-sticky}}
+
+
+    <nav class="toc" aria-label="{{a:guide.tocLabel}}"><ul>
+      <li class="toc-key"><a href="#preparer">Prepárese con antelación</a></li>
+      <li><a href="#lire">Leer una ficha</a></li>
+      <li><a href="#limites">Límites y riesgos</a></li>
+      <li><a href="#donnees">De dónde proceden los datos</a></li>
+      <li><a href="#position">Su ubicación y sus datos</a></li>
+      <li><a href="#erreur">¿Un error en una ficha?</a></li>
+      <li><a href="#dae">¿Qué es un desfibrilador?</a></li>
+      <li><a href="#utiles">Enlaces útiles</a></li>
+      <li><a href="#lien">Enlazar directamente con el mapa</a></li>
+      <li><a href="#credits">Créditos</a></li>
+      <li><a href="#origine">La idea original</a></li>
+      <li><a href="#soutien">Apoyar este sitio (facultativo)</a></li>
+      <li><a href="#mentions">Aviso legal</a></li>
+    </ul></nav>
+
+
+    <section class="highlight" aria-labelledby="preparer">
+    <h2 id="preparer">Prepárese con antelación</h2>
+    <p>El peor momento para descubrir dónde hay un desfibrilador es aquel en que se necesita. <strong>Anticípese: conozca su entorno antes de la emergencia.</strong></p>
+    <ul>
+      <li><strong>Simule situaciones realistas</strong>, desde los lugares donde pasa tiempo (domicilio, trabajo, escuela, guardería, club deportivo, familia, etc.). Inicie la búsqueda de emergencia <em>para un adulto</em>, luego <em>para un niño</em>, y vea lo que propone el sitio.</li>
+      <li><strong>Piense en la hora</strong>: un desfibrilador en un ayuntamiento, un gimnasio o una tienda probablemente no se pueda utilizar un domingo por la noche ni de madrugada. Una emergencia para su hijo a última hora de un domingo probablemente no dará las mismas opciones que una emergencia para un adulto a pleno día. Lea los horarios indicados en las fichas y busque los desfibriladores accesibles las 24 horas cerca de su casa.</li>
+      <li><strong>Compruebe en persona dónde están los desfibriladores</strong> si puede: pase por delante, verifique que está realmente allí y cómo se accede a él.</li>
+      <li>Autorice <strong>con antelación</strong> el acceso a su ubicación en su navegador (geolocalización) y practique cómo indicarla a mano con {{q:pos.changeMine}}.</li>
+      <li>Comparta con sus allegados los desfibriladores cercanos a usted: el botón {{q:share.button}} de cada ficha le ayuda a hacerlo (vea también «<a href="#lien">Enlazar directamente con el mapa</a>»).</li>
+    </ul>
+
+    <h3>Simular una emergencia a otra hora</h3>
+    <p>Elija un día y una hora: el mapa se abre en <strong>modo simulación</strong>, con una banda naranja bien visible y un botón para volver al modo normal. Cuentan el día de la semana y la hora. El día simulado no es festivo ni está en vacaciones, salvo que marque {{q:sim.form.holiday}} o {{q:sim.form.vacation}}.</p>
+{{partial:sim-form}}
+    <h3 id="accueil">Un acceso directo en la pantalla de inicio</h3>
+    <p>Para abrir el sitio con un solo toque, puede añadirlo a la pantalla de inicio de su teléfono. Es solo un acceso directo a esta página: no se instala como una aplicación y no funciona sin conexión.</p>
+    <ul>
+      <li><strong>iPhone (Safari)</strong>: toque el botón de compartir (un cuadrado con una flecha) y después «Añadir a pantalla de inicio».</li>
+      <li><strong>Android (Chrome)</strong>: toque el menú ⋮ (tres puntos) y después «Añadir a la pantalla de inicio».</li>
+    </ul>
+    <p>Los nombres exactos pueden variar según su dispositivo y la versión de su sistema operativo (iOS, Android…).</p>
+    </section>
+
+    <h2 id="lire">Leer una ficha</h2>
+    <p>En el mapa, cada desfibrilador es un <strong>punto</strong>: el <strong>círculo</strong> central resume el <strong>acceso</strong> (verde: accesible a cualquier hora; naranja: horario limitado; azul: horario desconocido), el <strong>anillo</strong> que lo rodea resume el <strong>mantenimiento</strong> (verde continuo: al día; gris en tres arcos: faltan fechas; rojo en pequeños guiones: electrodos o batería caducados, o mantenimiento antiguo), y una <strong>cara de bebé</strong> indica un desfibrilador declarado apto para niños (sin cara de bebé, la ficha indica si no lo es o si falta la información). Al pulsar un punto se abre su <strong>ficha</strong>. Aquí tiene cinco ejemplos ficticios.</p>
+    <div class="infocard-example" data-infocard="0"><p class="infocard-text"><strong>Círculo verde, anillo verde continuo</strong>: accesible a cualquier hora, desde el exterior, y mantenimiento al día. Es el caso más tranquilizador. Observe que este desfibrilador no está pensado para niños.</p></div>
+    <div class="infocard-example" data-infocard="1"><p class="infocard-text"><strong>Círculo naranja</strong>: accesible solo a determinadas horas (aquí, entre semana y el sábado por la mañana). El horario aparece resumido. <strong>Anillo gris en tres arcos</strong>: el mantenimiento no tiene fecha, así que el sitio no puede decir que esté al día.</p></div>
+    <div class="infocard-example" data-infocard="2"><p class="infocard-text"><strong>Apto para niños</strong>: la ficha lo indica, y los electrodos infantiles tienen su propia fecha de caducidad. Aquí el acceso se limita a los días de colegio y hay que pedir la llave.</p></div>
+    <div class="infocard-example" data-infocard="3"><p class="infocard-text"><strong>Círculo azul</strong>: no se indica ningún horario, así que el sitio no sabe si el lugar está abierto. <strong>Anillo rojo en pequeños guiones</strong>: hay electrodos caducados y el último mantenimiento es antiguo. Puede que el desfibrilador siga siendo utilizable, pero el sitio se lo dice con cautela.</p></div>
+    <div class="infocard-example" data-infocard="4"><p class="infocard-text"><strong>Puede que no esté en su sitio</strong>: las notas del gestor lo dan a entender, y la declaración aún no está validada. El sitio solo lo propone en una urgencia cuando no hay nada más, y le muestra ese pasaje para que juzgue usted mismo.</p></div>
+    <p><em>En estos ejemplos, {{q:card.problem}}, {{q:card.go}} y {{q:share.button}} no hacen nada: en el mapa abren el aviso de problema, la ruta y el uso compartido.</em></p>
+
+    <h2 id="limites">Límites y riesgos</h2>
+    <ul>
+      <li>El sitio <strong>puede cometer errores</strong>: desfibrilador trasladado, utilizado, robado, cerrado con llave, mal ubicado, electrodos caducados, horarios erróneos.</li>
+      <li><strong>Solo Francia.</strong> Los datos cubren la Francia metropolitana (Córcega incluida), los departamentos de ultramar (Guadalupe, Martinica, Guayana Francesa, La Reunión, Mayotte), donde suelen ser menos completos, y San Pedro y Miquelón. La Polinesia Francesa, Nueva Caledonia y Wallis y Futuna no figuran en la base de datos utilizada, y el sitio no conoce ningún desfibrilador en el extranjero. Cerca de una frontera, es posible que una opción mejor esté justo al otro lado, sin figurar en el mapa. En caso de emergencia en otro país de la Unión Europea, el 112 también funciona.</li>
+      <li>La mención «accesible a esta hora» es una <strong>estimación teórica</strong>, no una información en tiempo real. Los días festivos se calculan para la Francia metropolitana (con los dos días adicionales de Alsacia-Mosela); en ultramar, donde cada territorio tiene sus propios festivos, una regla de «festivos» deja la accesibilidad incierta.</li>
+      <li><strong>En la mayoría de los desfibriladores no se indica el horario</strong> (categoría {{q:access.unknown}}), y {{q:filters.maintOk}} solo significa que las fechas a vigilar (caducidad de los electrodos y de la batería, último mantenimiento) están informadas y no vencidas, no que el desfibrilador haya sido comprobado.</li>
+      <li><strong>La estimación usa la hora de su dispositivo.</strong> Compruebe que está a la hora local (zona horaria en modo automático): una hora o una zona horaria mal ajustadas falsean los resultados. En la simulación, la hora elegida se usa tal cual como hora local de cada desfibrilador, sea cual sea la configuración de su dispositivo.</li>
+      <li><strong>Las distancias son en línea recta y los tiempos de marcha son estimaciones</strong>: el recorrido real puede ser más largo (obstáculos, plantas, acceso al edificio).</li>
+      <li><strong>No se tienen en cuenta los cierres estacionales o periódicos</strong>: teatros, piscinas, campings, estadios, polideportivos… Un desfibrilador situado en un lugar así puede ser inaccesible aunque sus horarios declarados indiquen «abierto». Las vacaciones escolares solo cuentan cuando los horarios declarados las mencionan («fuera de las vacaciones escolares»). Algunos centros no siguen exactamente este calendario: un instituto, por ejemplo, puede cerrar antes del inicio oficial de las vacaciones.</li>
+      <li>El sitio está redactado originalmente en francés. <strong>Las traducciones a los demás idiomas se hacen lo mejor posible</strong>: es posible que haya algún error o que se pierda algún matiz, también en los mensajes relacionados con la emergencia.</li>
+      <li>Los detalles prácticos que los gestores añaden sobre sus desfibriladores se muestran tal cual, sin traducción.</li>
+      <li>El sitio <strong>puede desaparecer o cambiar en cualquier momento</strong>, sin previo aviso. Los conjuntos de datos (todos los desfibriladores conocidos en una fecha determinada) que haya descargado permanecen en su dispositivo mientras no los elimine.</li>
+      <li>No es un producto sanitario y no da ningún consejo médico. Para aprender los gestos que salvan vidas, acuda a una formación en primeros auxilios.</li>
+      <li>No se ofrece ninguna garantía, dentro de lo que permita la ley.</li>
+    </ul>
+
+    <h2 id="donnees">De dónde proceden los datos</h2>
+    <p>Los desfibriladores proceden de la base de datos nacional oficial <strong>Géo'DAE</strong>, publicada como datos abiertos en data.gouv.fr (Licence Ouverte 2.0). La alimentan los propios responsables de los desfibriladores: es, por tanto, <strong>declarativa</strong>, a veces incompleta o desactualizada.</p>
+    <p>Para sacarles el máximo provecho, estos datos se tratan antes de su publicación:</p>
+    <ul>
+      <li>se descartan los duplicados, los desfibriladores declarados fuera de servicio o eliminados y los que tienen coordenadas aberrantes;</li>
+      <li>el nombre del lugar («Piscina municipal») se distingue del responsable del desfibrilador;</li>
+      <li>las fechas de caducidad (electrodos, batería) y de último mantenimiento clasifican cada desfibrilador como <em>al día</em> (todas las caducidades útiles están informadas y no vencidas, y el mantenimiento tiene menos de 5 años), <em>antiguo o caducado</em> (una caducidad ha vencido o el mantenimiento tiene más de 5 años) o <em>no confirmado</em> (falta una fecha). El plazo de 5 años es una decisión del sitio, no una obligación legal que yo conozca;</li>
+      <li>la idoneidad para niños (electrodos pediátricos) es la declarada por el responsable; sigue siendo desconocida para una parte de los desfibriladores;</li>
+      <li>las menciones «fuera de las vacaciones escolares» y «cerrado durante las vacaciones escolares» se comparan con el <strong>calendario oficial de vacaciones</strong> de la zona (A, B o C) del desfibrilador: se estima cerrado durante las vacaciones y se lee según sus horarios el resto del tiempo. En Córcega, ultramar o sin calendario publicado para la fecha, esos horarios siguen siendo inciertos;</li>
+      <li>los horarios, incluidos los escritos en texto libre, se leen para estimar si un DEA es <em>a priori accesible a la hora de la búsqueda</em>.</li>
+    </ul>
+    <p>Estos tratamientos son <strong>estimaciones</strong>, no certezas. Un desfibrilador señalado como «al día» puede estar defectuoso, y un horario puede haberse interpretado mal. Si detecta un error, <a href="#erreur">así puede notificarlo</a>.</p>
+
+
+    <h3>Datos que no son en tiempo real</h3>
+    <p>Lo que ve ha hecho un largo camino, con un <strong>desfase en cada etapa</strong>:</p>
+    <ol>
+      <li>los responsables (municipios, empresas, asociaciones…) declaran sus desfibriladores en la base Géo'DAE a su propio ritmo;</li>
+      <li>esa base se vuelve a publicar en data.gouv.fr con regularidad, a veces varias veces al día;</li>
+      <li>yo recupero esos datos, los trato <strong>personalmente</strong> y los vuelvo a publicar en este sitio, a un ritmo que no garantizo.</li>
+    </ol>
+    <p>Lo que se muestra puede, por tanto, ir con varias horas, incluso varios días, de retraso respecto a la realidad: un desfibrilador trasladado o robado, un horario modificado, un mantenimiento realizado desde entonces. La fecha del conjunto de datos utilizado se indica en el menú {{q:nav.data}}.</p>
+
+
+    <h3>Elegir el conjunto de datos</h3>
+    <ul>
+      <li><strong>Por defecto, el sitio funciona en línea</strong>: carga los datos de la zona que está viendo, poco a poco.</li>
+      <li>En el menú <strong>{{q:nav.data}}</strong> puede <strong>descargar un conjunto de datos</strong> completo en su dispositivo. Permanece allí, con su tamaño indicado, hasta que lo elimine: usted decide qué conserva.</li>
+      <li>Pueden coexistir varios conjuntos de datos fechados. Si una actualización contiene un error, puede volver a un conjunto de datos más antiguo, <strong>siempre que lo haya conservado en su dispositivo</strong>: el propio sitio solo conserva sus tres últimos conjuntos de datos.</li>
+      <li>Los datos descargados reducen la dependencia de la red para cargarlos, pero <strong>el mapa de fondo y la carga del sitio aún pueden necesitar conexión</strong>. No cuente con un funcionamiento completo sin red.</li>
+    </ul>
+
+
+    <h2 id="position">Su ubicación y sus datos</h2>
+    <p>Su ubicación GPS se utiliza <strong>únicamente en su navegador</strong> para calcular las distancias. No se envía a ningún servidor del proyecto y yo no registro nada. El sitio no utiliza ninguna cookie.</p>
+    <p>Su dispositivo conserva solo, para sí mismo: sus filtros, los desfibriladores que haya decidido ignorar (su nombre, su localidad y un resumen de su ficha, durante el tiempo elegido), el conjunto de datos elegido y los conjuntos descargados. Mientras dura una pestaña, también guarda la última vista del mapa (centro y zoom), el enlace directo reconocido y la simulación en curso, para recuperarlos cuando vuelva de esta página; desaparecen al cerrar la pestaña. Puede eliminarlos desde el menú {{q:nav.data}} o borrando los datos del sitio en su navegador.</p>
+    <p>Sin embargo, el uso del sitio implica <strong>servicios de terceros</strong> que yo no controlo:</p>
+    <ul>
+      <li><strong>GitHub</strong> aloja el sitio y puede conservar registros de acceso (en particular la dirección IP). No sé con exactitud qué se registra y no asumo ningún compromiso en nombre de GitHub.</li>
+      <li><strong>OpenStreetMap</strong> proporciona el mapa de fondo: recibe su dirección IP y las zonas del mapa que muestra.</li>
+      <li>La <strong>búsqueda de direcciones</strong> (Géoplateforme del IGN) recibe el texto que usted escribe.</li>
+      <li><strong>Stripe</strong>, solo si hace clic en el enlace de donación al final de esta página: tiene su propia política de privacidad.</li>
+      <li>El botón {{q:card.go}} abre la aplicación de mapas de su dispositivo (Mapas de Apple, Google Maps…) con las coordenadas del desfibrilador como destino (pueden no indicar la entrada del edificio); su funcionamiento depende de esa aplicación.</li>
+      <li>El botón {{q:share.button}} copia el enlace o las coordenadas del desfibrilador (nunca su ubicación), o abre el menú de compartir de su dispositivo: lo que envía, y a quién, depende de usted.</li>
+    </ul>
+    <p>Si me escribe, se trata de un simple medio de comunicación, como cualquier correo electrónico, sin ninguna segunda intención: no constituyo ningún fichero ni base de datos a partir de los mensajes recibidos. Permanecen en mi buzón, cuyo proveedor tiene su propia política de privacidad, y no me comprometo a responder.</p>
+
+    <h2 id="erreur">¿Un error en una ficha?</h2>
+    <p>Una información mostrada puede ser errónea por dos motivos muy distintos, y no es la misma persona quien puede corregirla. Para saber cuál es, así se hace:</p>
+    <ol>
+      <li>En la ficha de un punto del mapa, o en la de un resultado de urgencia, pulse {{q:card.problem}}.</li>
+      <li>Se abre una pantalla encima, titulada {{q:problem.title}}.</li>
+      <li>Compruebe:
+        <ul>
+          <li><strong>El error ya está en los datos sin interpretar de esta pantalla</strong> (desfibrilador trasladado o retirado, horarios falsos, electrodos caducados, dirección errónea…): es erróneo en origen, y solo el responsable puede corregirlo, actualizando su declaración en el portal oficial <a href="https://geodae.atlasante.fr/apropos" rel="noopener">Géo'DAE</a>. Una vez que el responsable haya corregido el error, la corrección debería aparecer aquí en una próxima actualización de los datos.</li>
+          <li><strong>Los datos son correctos, pero el sitio los interpreta mal</strong> (un desfibrilador clasificado como {{q:access.unknown}} aunque las precisiones (notas introducidas por el responsable) indican horarios, «abierto» por error, mantenimiento juzgado caducado o al día por error…): el error es mío. Escríbame con «<a href="#mentions">Contactarme</a>» (al final de esta página), adjuntando el enlace de la ficha (botón {{q:share.button}}, luego {{q:share.copyLink}}): podré encontrar el desfibrilador y corregir la lectura. ¡Gracias!</li>
+        </ul>
+      </li>
+    </ol>
+    <p>El enlace {{q:problem.learn}} de esa pantalla lleva directamente aquí (se abre en una pestaña nueva).</p>
+    <p><strong>Ignorar no es notificar.</strong> El botón {{q:problem.ignore}} no avisa a nadie: retira ese desfibrilador de sus sugerencias de emergencia, solo en este dispositivo, y sigue visible en el mapa.</p>
+    <p>En el menú {{q:nav.data}}, sección {{q:ignored.title}}, puede restablecerlo en cualquier momento o ampliar la duración (1 semana, 1 mes, o {{q:ignored.d.change}}, con un límite de un año). Es útil para apartar de forma duradera un desfibrilador que sabe que se ha retirado o que es inaccesible, o para preparar un desplazamiento. Si un desfibrilador ignorado habría podido proponérsele en una búsqueda de urgencia, la lista de resultados lo indica: {{q:results.hiddenIgnored.one}}</p>
+    <p>Para que un error se corrija para todos, hay que dirigirse al responsable o a mí, según el caso descrito arriba.</p>
+
+
+    <h2 id="dae">¿Qué es un desfibrilador?</h2>
+    <p>Un desfibrilador externo automático (DEA) es un aparato portátil, diseñado para que cualquier persona pueda utilizarlo, incluso sin formación. En caso de parada cardíaca, se colocan dos electrodos como indica el aparato: analiza el ritmo de su corazón, decide por sí mismo si una descarga es útil y guía con instrucciones de voz, paso a paso. Solo administra una descarga si es necesaria.</p>
+    <p>Algunos desfibriladores están previstos para niños (electrodos o ajuste específicos), otros no: por eso la búsqueda de urgencia le pregunta si la persona es un adulto o un niño. Según tengo entendido, los fabricantes reservan generalmente los electrodos para niños a niños pequeños de menos de 8&nbsp;años o de menos de 25&nbsp;kg. Las recomendaciones francesas del Conseil français de réanimation cardio-pulmonaire (<a href="https://www.cfrc.fr/reanimation-enfant" rel="noopener">página «Réanimation pédiatrique», en francés</a>, que se basa en las recomendaciones europeas de 2025) lo matizan: en un niño de más de un año, puede utilizarse un desfibrilador público incluso sin material para niños y, a falta de este, los electrodos para adultos son aceptables. En todos los casos, llame primero a los servicios de emergencia, que le guían por teléfono.</p>
+    <p><em>Esta información se comparte a título meramente informativo, según mi comprensión: no constituye un consejo médico.</em></p>
+
+    <h2 id="utiles">Enlaces útiles</h2>
+    <p>Estos enlaces se ofrecen solo a título informativo, sin colaboración ni contrapartida, y su contenido es responsabilidad de sus editores. Las páginas enlazadas están en francés.</p>
+    <ul>
+      <li><a href="https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/numeros-utiles-nationaux" rel="noopener">Números de emergencia nacionales</a> (Ma Sécurité, Ministerio del Interior francés), incluido el 114 por SMS para personas sordas, con dificultades auditivas o que no pueden hablar.</li>
+      <li><a href="https://www.croix-rouge.fr/les-gestes-de-premiers-secours/arret-cardiaque" rel="noopener">Parada cardíaca: cómo hacer un masaje cardíaco</a> (Cruz Roja francesa).</li>
+      <li><a href="https://www.fedecardio.org/je-m-informe/appelez-le-15-massez-defibrillez/" rel="noopener">Llame al 15, masajee, desfibrile</a> (Federación Francesa de Cardiología).</li>
+      <li><a href="https://www.securite-civile.interieur.gouv.fr/sengager/engagement-citoyen/se-former-aux-gestes-qui-sauvent" rel="noopener">Formarse en los gestos que salvan</a> (Sécurité civile, Ministerio del Interior francés).</li>
+      <li><a href="https://geodae.atlasante.fr/apropos" rel="noopener">Géo'DAE</a>, el portal oficial de la base de datos nacional de desfibriladores, para declarar o corregir un desfibrilador (para responsables).</li>
+    </ul>
+
+    <h2 id="lien">Enlazar directamente con el mapa</h2>
+    <p>Es posible abrir el mapa directamente en un lugar concreto añadiendo un parámetro al final de la dirección web del sitio:</p>
+    <ul>
+      <li><code>{{site}}{{file:index}}?cp=75002</code>: un código postal. Si varios municipios lo comparten, el mapa los muestra todos.</li>
+      <li><code>{{site}}{{file:index}}?code_insee=75102</code>: el código INSEE de un municipio, más preciso: designa un único municipio. En París, Lyon y Marsella son los códigos de los distritos (arrondissements), o el de la ciudad entera.</li>
+    </ul>
+    <p>Si se indican los dos, solo se usa el código INSEE; el código postal solo se usa si el código INSEE no se reconoce. Si no se reconoce ninguno, el mapa se abre con normalidad. El centrado es aproximado (el centro del municipio): el enlace no garantiza nada sobre la presencia de desfibriladores en ese lugar.</p>
+    <p>Para compartir un desfibrilador concreto, lo más sencillo es el botón {{q:share.button}} de su ficha. Genera un enlace como <code>{{site}}{{file:index}}?gps_dae=43.59947,1.43335&amp;id_dae=12345</code>: <code>gps_dae</code> indica las coordenadas del desfibrilador (latitud, longitud) y <code>id_dae</code>, opcional, precisa cuál cuando varios desfibriladores tienen las mismas coordenadas. El mapa se abre a nivel de calle y abre su ficha si sigue siendo conocido. Este parámetro tiene prioridad sobre los otros dos. Como los datos cambian, es posible que el desfibrilador se haya movido o eliminado desde que se creó el enlace.</p>
+
+{{partial:widget}}
+    <h2 id="credits">Créditos</h2>
+    <ul>
+      <li><strong>Desfibriladores</strong>: base de datos nacional Géo'DAE, datos abiertos bajo <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte 2.0</a>.</li>
+      <li><strong>Mapa de fondo</strong>: © los colaboradores de <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>, bajo licencia ODbL. Biblioteca de mapas: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>.</li>
+      <li><strong>Búsqueda de direcciones</strong>: Géoplateforme del IGN.</li>
+      <li><strong>Logotipo</strong>: adaptación personal del pictograma ISO 7010 E010 («desfibrilador externo automático»), publicado en el dominio público (CC0) en Wikimedia Commons, en el que el corazón se sustituye por Francia. Este logotipo no es una marca oficial (véase «Un sitio no oficial»).</li>
+      <li><strong>Municipios y códigos postales</strong>: <a href="https://geo.api.gouv.fr/" rel="noopener">API Géo</a> (DINUM), a partir de los datos de direcciones publicados en adresse.data.gouv.fr, con <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte (licencia abierta francesa)</a>.</li>
+      <li><strong>Vacaciones escolares</strong>: «Le calendrier scolaire», publicado por el Ministerio de Educación Nacional francés en <a href="https://data.education.gouv.fr/explore/dataset/fr-en-calendrier-scolaire/" rel="noopener">data.education.gouv.fr</a>, con <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte 2.0</a>.</li>
+    </ul>
+
+    <h2 id="origine">La idea original</h2>
+    <p>Este sitio se concibió primero para un <strong>uso privado</strong>: encontrar rápidamente un desfibrilador (DEA) cerca de uno, teniendo en cuenta la hora, el estado probable del desfibrilador y si la persona a la que hay que socorrer es un adulto o un niño.</p>
+    <p>Finalmente se hizo público y abierto a todos, y traducido lo mejor posible a distintos idiomas, suponiendo que podría ser de ayuda.</p>
+    <p>En concreto, aquí: <strong>ninguna publicidad</strong>, ningún socio comercial, ningún patrocinador, ninguna colocación de producto, <strong>ninguna cuenta</strong> que crear, ninguna suscripción ni servicio de pago (al final de esta página hay un enlace de donación facultativo) y <strong>ninguna recogida de datos por mi parte</strong>: ni herramienta de medición de audiencia, ni base de usuarios, ni formulario.</p>
+
+    <h2 id="soutien">Apoyar este sitio (facultativo)</h2>
+    <p>Este sitio es gratuito y no tengo intención de que eso cambie. Si desea alentar esta iniciativa, puede contribuir libremente. Es <strong>totalmente facultativo y sin contrapartida</strong>: una donación no da derecho a ningún servicio ni trato particular y no es deducible de impuestos.</p>
+{{partial:don}}
+
+    <h2 id="mentions">Aviso legal</h2>
+    <p><strong>Un sitio no oficial.</strong> Este sitio es un proyecto personal e independiente, editado sin carácter profesional por una persona física en cumplimiento de la ley francesa (artículo&nbsp;6, III, 2 de la ley de 21&nbsp;de junio de 2004 para la confianza en la economía digital). No es oficial ni está afiliado al Estado francés, a los servicios de emergencia (SAMU, bomberos, etc.), a las autoridades sanitarias ni al equipo de Géo'DAE, y no ha recibido ninguna aprobación por su parte. Los símbolos, nombres y colores que evocan los desfibriladores o los servicios de emergencia se utilizan con fines meramente ilustrativos y no implican ningún vínculo oficial.</p>
+    <p><strong>Alojamiento:</strong> GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, EE.&nbsp;UU. (<a href="https://github.com" rel="noopener">github.com</a>), +1&nbsp;877&nbsp;448&nbsp;4820.</p>
+    <p><strong>Contacto</strong>: <a id="contact-link" href="#mentions">Contactarme</a> <noscript>(active JavaScript para ver la dirección de correo electrónico)</noscript></p>
+
+    <p class="foot" id="dataset-info"></p>
+    </div>
+    {{partial:open-map-end}}

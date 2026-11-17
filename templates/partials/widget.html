@@ -1,0 +1,31 @@
+    <h3 id="widget">{{t:widget.title}}</h3>
+    <p>{{t:widget.intro}}</p>
+    <div id="widget-generator" class="widget-gen" data-langs="{{widget_texts}}">
+      <fieldset><legend>{{t:widget.format}}</legend>
+        <label><input type="radio" name="wg-format" value="button" checked> {{t:widget.formatButton}}</label>
+        <label><input type="radio" name="wg-format" value="badge"> {{t:widget.formatBadge}}</label>
+        <label><input type="radio" name="wg-format" value="link"> {{t:widget.formatLink}}</label>
+      </fieldset>
+      <label class="wg-field">{{t:widget.language}} <select id="wg-lang"></select></label>
+      <fieldset><legend>{{t:widget.place}}</legend>
+        <label><input type="radio" name="wg-place" value="none" checked> {{t:widget.placeNone}}</label>
+        <label><input type="radio" name="wg-place" value="cp"> {{t:widget.placeCp}}</label>
+        <label><input type="radio" name="wg-place" value="insee"> {{t:widget.placeInsee}}</label>
+        <div class="wg-place-fields" hidden>
+          <label class="wg-field">{{t:widget.placeCode}} <input id="wg-code" type="text" maxlength="5" size="7" autocomplete="off" spellcheck="false"></label>
+          <label class="wg-field">{{t:widget.placeName}} <input id="wg-name" type="text" maxlength="60" autocomplete="off"></label>
+        </div>
+        <p id="wg-warn" class="wg-warn" role="status" hidden></p>
+      </fieldset>
+      <label class="wg-field">{{t:widget.text}} <input id="wg-text" type="text" maxlength="90" autocomplete="off"></label>
+      <fieldset><legend>{{t:widget.theme}}</legend>
+        <label><input type="radio" name="wg-theme" value="green" checked> {{t:widget.themeGreen}}</label>
+        <label><input type="radio" name="wg-theme" value="light"> {{t:widget.themeLight}}</label>
+        <label><input type="radio" name="wg-theme" value="dark"> {{t:widget.themeDark}}</label>
+      </fieldset>
+      <label class="wg-check"><input type="checkbox" id="wg-anim"> {{t:widget.animated}}</label>
+      <p class="wg-label"><strong>{{t:widget.preview}}</strong></p>
+      <div id="wg-preview" class="wg-preview"></div>
+      <label class="wg-field wg-out">{{t:widget.code}} <textarea id="wg-out" readonly rows="9" spellcheck="false"></textarea></label>
+      <p><button type="button" id="wg-copy" class="wg-copy">{{t:widget.copy}}</button> <span id="wg-status" role="status"></span></p>
+    </div>

@@ -1,0 +1,10 @@
+# Fichiers système
+.DS_Store
+
+# Données : jamais dans la branche principale (le dépôt resterait lourd à jamais).
+# Elles sont publiées uniquement sur la branche gh-pages, réécrite à chaque mise à jour.
+data/
+
+# Python
+__pycache__/
+*.pyc

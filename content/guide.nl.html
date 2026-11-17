@@ -1,0 +1,190 @@
+    <div class="title">{{partial:logo-anime}}<h1>{{t:guide.title}}</h1></div>
+
+    <p>Deze site toont op een <a href="{{page:index}}">kaart</a> de positie van de defibrillatoren (AED's: <a href="#dae">wat is dat?</a>) in Frankrijk en geeft in een <strong>infokaart</strong> alle bekende details over elk toestel: adres, openingstijden, vermoedelijke staat, geschiktheid voor kinderen. Ook biedt hij een <strong>noodzoekopdracht</strong>, die de meest geschikte defibrillatoren in de buurt voor uw situatie voorstelt en die ook <strong>in simulatie</strong> gebruikt kan worden om te oefenen of zich vooraf voor te bereiden. Deze site is <strong>gratis, <a href="#origine">welwillend</a> en vrijblijvend</strong>. Hij is niet officieel en wordt geleverd zoals hij is, <strong>op eigen risico van degene die hem gebruikt</strong>.</p>
+    <p class="alert"><strong>Bel bij een hartstilstand of een andere levensbedreigende noodsituatie eerst <a href="tel:112">112</a> of <a href="tel:15">15</a> (sms: <a href="sms:114">114</a>).</strong> De hulpdiensten begeleiden u en kunnen u naar een defibrillator verwijzen. Deze site vervangt hen niet.</p>
+    <div class="sticky-zone">
+    {{partial:open-map-sticky}}
+
+
+    <nav class="toc" aria-label="{{a:guide.tocLabel}}"><ul>
+      <li class="toc-key"><a href="#preparer">Bereid u vooraf voor</a></li>
+      <li><a href="#lire">Een infokaart lezen</a></li>
+      <li><a href="#limites">Beperkingen en risico's</a></li>
+      <li><a href="#donnees">Waar de gegevens vandaan komen</a></li>
+      <li><a href="#position">Uw locatie en uw gegevens</a></li>
+      <li><a href="#erreur">Een fout in een infokaart?</a></li>
+      <li><a href="#dae">Wat is een defibrillator?</a></li>
+      <li><a href="#utiles">Nuttige links</a></li>
+      <li><a href="#lien">Rechtstreeks naar de kaart linken</a></li>
+      <li><a href="#credits">Bronvermelding</a></li>
+      <li><a href="#origine">Het oorspronkelijke idee</a></li>
+      <li><a href="#soutien">Deze site steunen (vrijwillig)</a></li>
+      <li><a href="#mentions">Juridische informatie</a></li>
+    </ul></nav>
+
+
+    <section class="highlight" aria-labelledby="preparer">
+    <h2 id="preparer">Bereid u vooraf voor</h2>
+    <p>Het slechtste moment om te ontdekken waar een defibrillator hangt, is het moment waarop u er een nodig hebt. <strong>Loop vooruit op de feiten: leer uw omgeving kennen vóór er een noodgeval is.</strong></p>
+    <ul>
+      <li><strong>Simuleer realistische situaties</strong>, vanuit de plekken waar u tijd doorbrengt (thuis, werk, school, kinderopvang, sportclub, familie, enz.). Start de noodzoekopdracht <em>voor een volwassene</em>, vervolgens <em>voor een kind</em>, en bekijk wat de site voorstelt.</li>
+      <li><strong>Denk aan het tijdstip</strong>: een defibrillator in een gemeentehuis, een sporthal of een winkel is op zondagavond of 's nachts waarschijnlijk niet bruikbaar. Een noodgeval voor uw kind laat op zondagavond levert waarschijnlijk niet dezelfde opties op als een noodgeval voor een volwassene midden op de dag. Lees de openingstijden op de kaartjes en zoek defibrillatoren die in uw buurt 24 uur per dag toegankelijk zijn.</li>
+      <li><strong>Controleer zelf waar de defibrillatoren hangen</strong> als u kunt: loop er langs, ga na of hij er echt hangt en hoe u erbij komt.</li>
+      <li>Geef <strong>vooraf</strong> toegang tot uw locatie in uw browser (geolocatie) en oefen met het handmatig opgeven ervan via {{q:pos.changeMine}}.</li>
+      <li>Deel de defibrillatoren bij u in de buurt met uw naasten: de knop {{q:share.button}} op elke kaart helpt u daarbij (zie ook ‘<a href="#lien">Rechtstreeks naar de kaart linken</a>’).</li>
+    </ul>
+
+    <h3>Een noodgeval op een ander tijdstip simuleren</h3>
+    <p>Kies een dag en een tijdstip: de kaart opent in <strong>simulatiemodus</strong>, met een duidelijk zichtbare oranje balk en een knop om terug te keren naar de normale modus. De dag van de week en het tijdstip tellen mee. De gesimuleerde dag is geen feestdag en valt niet in de vakantie, tenzij u {{q:sim.form.holiday}} of {{q:sim.form.vacation}} aanvinkt.</p>
+{{partial:sim-form}}
+    <h3 id="accueil">Een snelkoppeling op uw beginscherm</h3>
+    <p>Om de site met één tik te openen, kunt u hem toevoegen aan het beginscherm van uw telefoon. Het is alleen een snelkoppeling naar deze pagina: hij wordt niet als app geïnstalleerd en werkt niet zonder verbinding.</p>
+    <ul>
+      <li><strong>iPhone (Safari)</strong>: tik op de deelknop (een vierkant met een pijl) en daarna op ‘Zet op beginscherm’.</li>
+      <li><strong>Android (Chrome)</strong>: tik op het menu ⋮ (drie puntjes) en daarna op ‘Toevoegen aan startscherm’.</li>
+    </ul>
+    <p>De exacte benamingen kunnen verschillen per apparaat en per versie van het besturingssysteem (iOS, Android…).</p>
+    </section>
+
+    <h2 id="lire">Een infokaart lezen</h2>
+    <p>Op de kaart is elke defibrillator een <strong>punt</strong>: de <strong>cirkel</strong> in het midden vat de <strong>toegang</strong> samen (groen: op elk moment toegankelijk; oranje: beperkte openingstijden; blauw: openingstijden onbekend), de <strong>ring</strong> eromheen vat het <strong>onderhoud</strong> samen (effen groen: op orde; grijs in drie bogen: er ontbreken data; rood in kleine streepjes: elektroden of batterij verlopen, of oud onderhoud), en een <strong>babygezichtje</strong> geeft een defibrillator aan die als geschikt voor kinderen is opgegeven (zonder babygezichtje geeft de infokaart aan of hij dat niet is of dat de informatie ontbreekt). Door een punt aan te tikken opent u de <strong>infokaart</strong>. Hier zijn vijf fictieve voorbeelden.</p>
+    <div class="infocard-example" data-infocard="0"><p class="infocard-text"><strong>Groene cirkel, effen groene ring</strong>: op elk moment toegankelijk, van buitenaf, en onderhoud op orde. Dit is het meest geruststellende geval. Let op: deze defibrillator is niet bedoeld voor kinderen.</p></div>
+    <div class="infocard-example" data-infocard="1"><p class="infocard-text"><strong>Oranje cirkel</strong>: alleen op bepaalde tijden toegankelijk (hier op werkdagen en zaterdagochtend). De openingstijden zijn samengevat. <strong>Grijze ring in drie bogen</strong>: het onderhoud heeft geen datum, dus de site kan niet zeggen dat het op orde is.</p></div>
+    <div class="infocard-example" data-infocard="2"><p class="infocard-text"><strong>Geschikt voor kinderen</strong>: de infokaart vermeldt het, en de elektroden voor kinderen hebben een eigen vervaldatum. Hier is de toegang beperkt tot schooldagen en moet u om de sleutel vragen.</p></div>
+    <div class="infocard-example" data-infocard="3"><p class="infocard-text"><strong>Blauwe cirkel</strong>: er zijn geen openingstijden vermeld, dus de site weet niet of de plek open is. <strong>Rode ring in kleine streepjes</strong>: sommige elektroden zijn verlopen en het laatste onderhoud is oud. De defibrillator is misschien toch bruikbaar, maar de site zegt het u met voorzichtigheid.</p></div>
+    <div class="infocard-example" data-infocard="4"><p class="infocard-text"><strong>Mogelijk is hij er niet</strong>: de notities van de beheerder wijzen daarop, en de melding is nog niet gevalideerd. De site stelt hem bij nood alleen voor als er niets anders is, en toont u die passage zodat u zelf kunt oordelen.</p></div>
+    <p><em>In deze voorbeelden doen {{q:card.problem}}, {{q:card.go}} en {{q:share.button}} niets: op de kaart openen ze de probleemmelding, de route en het delen.</em></p>
+
+    <h2 id="limites">Beperkingen en risico's</h2>
+    <ul>
+      <li>De site <strong>kan fouten maken</strong>: defibrillator verplaatst, gebruikt, gestolen, op slot, verkeerd gelokaliseerd, verlopen elektroden, onjuiste openingstijden.</li>
+      <li><strong>Alleen Frankrijk.</strong> De gegevens betreffen het Franse vasteland (inclusief Corsica), de overzeese departementen (Guadeloupe, Martinique, Frans-Guyana, Réunion, Mayotte), waar ze vaak minder volledig zijn, en Saint-Pierre en Miquelon. Frans-Polynesië, Nieuw-Caledonië en Wallis en Futuna komen niet voor in de gebruikte database, en de site kent geen enkele defibrillator in het buitenland. Dicht bij een grens ligt mogelijk net aan de andere kant een betere keuze, die niet op de kaart staat. Bij een noodgeval in een ander land van de Europese Unie werkt 112 ook.</li>
+      <li>De vermelding “op dit tijdstip toegankelijk” is een <strong>theoretische schatting</strong>, geen realtime-informatie. Feestdagen worden berekend voor het Franse vasteland (met de twee extra dagen in Elzas-Lotharingen); overzee, waar elk gebied eigen feestdagen heeft, laat een regel voor “feestdagen” de toegankelijkheid onzeker.</li>
+      <li><strong>Bij de meeste defibrillatoren zijn de openingstijden niet ingevuld</strong> (categorie {{q:access.unknown}}), en {{q:filters.maintOk}} betekent alleen dat de te controleren data (vervaldatum van de elektroden en de batterij, laatste onderhoud) zijn ingevuld en niet verstreken, niet dat de defibrillator is gecontroleerd.</li>
+      <li><strong>De schatting gebruikt de tijd van uw apparaat.</strong> Controleer of die de lokale tijd aangeeft (tijdzone op automatisch): een verkeerde tijd of tijdzone vertekent de resultaten. In de simulatie wordt de gekozen tijd ongewijzigd gebruikt als lokale tijd van elke defibrillator, ongeacht de instellingen van uw apparaat.</li>
+      <li><strong>Afstanden zijn hemelsbreed en looptijden zijn schattingen</strong>: de werkelijke route kan langer zijn (obstakels, verdiepingen, toegang tot het gebouw).</li>
+      <li><strong>Seizoensgebonden of periodieke sluitingen worden niet meegenomen</strong>: theaters, zwembaden, campings, stadions, sporthallen… Een defibrillator op zo'n plek kan ontoegankelijk zijn, ook al geven de opgegeven openingstijden “open” aan. Schoolvakanties tellen alleen mee als de opgegeven openingstijden ze vermelden (“buiten de schoolvakanties”). Sommige instellingen volgen deze kalender niet precies: een middelbare school kan bijvoorbeeld eerder sluiten dan het officiële begin van de vakantie.</li>
+      <li>De site is oorspronkelijk in het Frans geschreven. <strong>Vertalingen in andere talen worden zo goed mogelijk gemaakt</strong>: een fout of een verloren nuance is mogelijk, ook in berichten die met noodsituaties te maken hebben.</li>
+      <li>De praktische details die beheerders over hun defibrillatoren toevoegen, worden ongewijzigd en zonder vertaling getoond.</li>
+      <li>De site <strong>kan op elk moment en zonder voorafgaande kennisgeving verdwijnen of veranderen</strong>. Datasets (alle defibrillatoren die op een bepaalde datum bekend zijn) die u hebt gedownload, blijven op uw apparaat staan zolang u ze niet verwijdert.</li>
+      <li>Dit is geen medisch hulpmiddel en de site geeft geen medisch advies. Volg een eerstehulpcursus om levensreddende handelingen te leren.</li>
+      <li>Er wordt geen enkele garantie gegeven, voor zover de wet dat toestaat.</li>
+    </ul>
+
+    <h2 id="donnees">Waar de gegevens vandaan komen</h2>
+    <p>De defibrillatoren komen uit de officiële nationale database <strong>Géo'DAE</strong>, die als open data op data.gouv.fr wordt gepubliceerd (Licence Ouverte 2.0). Ze wordt door de beheerders zelf gevuld: ze is dus <strong>declaratief</strong>, soms onvolledig of verouderd.</p>
+    <p>Om er het meeste uit te halen, worden deze gegevens vóór publicatie bewerkt:</p>
+    <ul>
+      <li>duplicaten, defibrillatoren die als buiten gebruik of verwijderd zijn gemeld en die met onwaarschijnlijke coördinaten worden weggelaten;</li>
+      <li>de naam van de plek (“Gemeentelijk zwembad”) wordt onderscheiden van die van de beheerder;</li>
+      <li>vervaldata (elektroden, batterij) en de datum van het laatste onderhoud delen elke defibrillator in als <em>op orde</em> (alle relevante vervaldata zijn ingevuld en niet verstreken, en het onderhoud is minder dan 5 jaar oud), <em>oud of verlopen</em> (een vervaldatum is verstreken, of het onderhoud is meer dan 5 jaar oud) of <em>niet bevestigd</em> (er ontbreekt een datum). De grens van 5 jaar is een keuze van de site, geen wettelijke verplichting voor zover ik weet;</li>
+      <li>de geschiktheid voor kinderen (pediatrische elektroden) is zoals opgegeven door de beheerder; ze blijft onbekend voor een deel van de defibrillatoren;</li>
+      <li>de vermeldingen “buiten de schoolvakanties” en “gesloten tijdens de schoolvakanties” worden vergeleken met de <strong>officiële vakantiekalender</strong> van de zone (A, B of C) van de defibrillator: tijdens de vakantie wordt hij als gesloten beschouwd, de rest van het jaar volgens zijn openingstijden. Op Corsica, overzee of zonder gepubliceerde kalender voor de datum blijven deze openingstijden onzeker;</li>
+      <li>de openingstijden, ook die als vrije tekst zijn geschreven, worden gelezen om te schatten of een AED <em>a priori toegankelijk is op het moment van zoeken</em>.</li>
+    </ul>
+    <p>Deze bewerkingen zijn <strong>schattingen</strong>, geen zekerheden. Een defibrillator die als “op orde” is gemarkeerd, kan defect zijn, en een openingstijd kan verkeerd zijn geïnterpreteerd. Ziet u een fout, dan leest u <a href="#erreur">hier hoe u die meldt</a>.</p>
+
+
+    <h3>Gegevens die niet in realtime zijn</h3>
+    <p>Wat u ziet heeft een lange weg afgelegd, met een <strong>vertraging bij elke stap</strong>:</p>
+    <ol>
+      <li>de beheerders (gemeenten, bedrijven, verenigingen…) melden hun defibrillatoren aan in de database Géo'DAE in hun eigen tempo;</li>
+      <li>deze database wordt regelmatig opnieuw gepubliceerd op data.gouv.fr, soms meerdere keren per dag;</li>
+      <li>ik haal deze gegevens op, bewerk ze <strong>zelf</strong> en publiceer ze vervolgens opnieuw op deze site, in een tempo dat ik niet garandeer.</li>
+    </ol>
+    <p>Wat wordt weergegeven kan dus enkele uren, zelfs enkele dagen achterlopen op de werkelijkheid: een verplaatste of gestolen defibrillator, gewijzigde openingstijden, onderhoud dat inmiddels is uitgevoerd. De datum van de gebruikte dataset staat in het menu {{q:nav.data}}.</p>
+
+
+    <h3>De dataset kiezen</h3>
+    <ul>
+      <li><strong>Standaard werkt de site online</strong>: hij laadt de gegevens van het gebied dat u bekijkt, gaandeweg.</li>
+      <li>In het menu <strong>{{q:nav.data}}</strong> kunt u een volledige <strong>dataset naar uw apparaat downloaden</strong>. Die blijft daar staan, met de grootte erbij, totdat u hem verwijdert: u bepaalt wat u bewaart.</li>
+      <li>Meerdere gedateerde datasets kunnen naast elkaar bestaan. Als een update een fout bevat, kunt u terug naar een oudere dataset, <strong>op voorwaarde dat u die op uw apparaat hebt bewaard</strong>: de site zelf bewaart alleen zijn laatste drie datasets.</li>
+      <li>Gedownloade gegevens verminderen de afhankelijkheid van het netwerk om ze te laden, maar <strong>de achtergrondkaart en het laden van de site kunnen nog steeds een verbinding vereisen</strong>. Reken niet op volledige werking zonder netwerk.</li>
+    </ul>
+
+
+    <h2 id="position">Uw locatie en uw gegevens</h2>
+    <p>Uw GPS-locatie wordt <strong>alleen in uw browser</strong> gebruikt om afstanden te berekenen. Ze wordt naar geen enkele server van het project gestuurd, en ik sla niets op. De site gebruikt geen cookies.</p>
+    <p>Uw apparaat bewaart alleen, voor zichzelf: uw filters, de defibrillatoren die u hebt genegeerd (hun naam, gemeente en een samenvatting van hun gegevens, voor de gekozen duur), de gekozen dataset en de gedownloade datasets. Zolang een tabblad openstaat, onthoudt het ook de laatste kaartweergave (midden en zoom), de herkende directe link en de lopende simulatie, om die terug te zetten wanneer u van deze pagina terugkeert; ze verdwijnen wanneer u het tabblad sluit. U kunt ze verwijderen via het menu {{q:nav.data}} of door de gegevens van de site in uw browser te wissen.</p>
+    <p>Het gebruik van de site brengt echter <strong>diensten van derden</strong> in het spel die ik niet controleer:</p>
+    <ul>
+      <li><strong>GitHub</strong> host de site en kan toegangslogboeken bewaren (met name het IP-adres). Ik weet niet precies wat wordt geregistreerd en neem geen verplichtingen op me namens GitHub.</li>
+      <li><strong>OpenStreetMap</strong> levert de achtergrondkaart: het ontvangt uw IP-adres en de kaartgebieden die u bekijkt.</li>
+      <li>De <strong>adreszoekfunctie</strong> (Géoplateforme van het IGN) ontvangt de tekst die u typt.</li>
+      <li><strong>Stripe</strong>, alleen als u op de donatielink onderaan deze pagina klikt: het heeft een eigen privacybeleid.</li>
+      <li>De knop {{q:card.go}} opent de kaarten-app van uw apparaat (Apple Kaarten, Google Maps…) met de coördinaten van de defibrillator als bestemming (die wijzen mogelijk niet naar de ingang van het gebouw); hoe die werkt, hangt van die app af.</li>
+      <li>De knop {{q:share.button}} kopieert de link of de coördinaten van de defibrillator (nooit uw locatie) of opent het deelmenu van uw apparaat: wat u verstuurt, en naar wie, bepaalt u zelf.</li>
+    </ul>
+    <p>Als u mij schrijft, is dat gewoon een gebruikelijk communicatiemiddel, zoals elke e-mail, zonder bijbedoelingen: ik leg geen bestand of database aan met de ontvangen berichten. Ze blijven in mijn mailbox, waarvan de aanbieder een eigen privacybeleid heeft, en ik ben niet verplicht te antwoorden.</p>
+
+    <h2 id="erreur">Een fout in een infokaart?</h2>
+    <p>Een weergegeven gegeven kan om twee heel verschillende redenen onjuist zijn, en het is niet dezelfde persoon die het kan herstellen. Zo komt u erachter om welk geval het gaat:</p>
+    <ol>
+      <li>Tik in de infokaart van een punt op de kaart, of van een noodresultaat, op {{q:card.problem}}.</li>
+      <li>Erboven opent een scherm met de titel {{q:problem.title}}.</li>
+      <li>Controleer:
+        <ul>
+          <li><strong>De fout zit al in de niet-geïnterpreteerde gegevens op dit scherm</strong> (defibrillator verplaatst of verwijderd, verkeerde openingstijden, verlopen elektroden, onjuist adres…): hij is onjuist bij de bron, en alleen de beheerder kan hem herstellen, door zijn melding bij te werken op het officiële portaal <a href="https://geodae.atlasante.fr/apropos" rel="noopener">Géo'DAE</a>. Zodra de beheerder de fout heeft hersteld, zou de correctie hier bij een volgende bijwerking van de gegevens moeten verschijnen.</li>
+          <li><strong>De gegevens zijn juist, maar de site interpreteert ze verkeerd</strong> (een defibrillator ingedeeld als {{q:access.unknown}} terwijl de toelichting (door de beheerder ingevoerde notities) tijden vermeldt, ten onrechte “open”, onderhoud ten onrechte als verlopen of actueel beoordeeld…): de fout ligt bij mij. Schrijf mij via “<a href="#mentions">Neem contact op</a>” (onderaan deze pagina) en voeg de link van de kaart toe (knop {{q:share.button}}, daarna {{q:share.copyLink}}): dan kan ik de defibrillator terugvinden en de uitlezing corrigeren. Dank u!</li>
+        </ul>
+      </li>
+    </ol>
+    <p>De link {{q:problem.learn}} op dat scherm brengt u rechtstreeks hierheen (hij opent in een nieuw tabblad).</p>
+    <p><strong>Negeren is niet melden.</strong> De knop {{q:problem.ignore}} waarschuwt niemand: hij haalt die defibrillator uit uw noodsuggesties, alleen op dit apparaat, en hij blijft zichtbaar op de kaart.</p>
+    <p>In het menu {{q:nav.data}}, onder {{q:ignored.title}}, kunt u hem op elk moment herstellen of de duur verlengen (1 week, 1 maand, of {{q:ignored.d.change}}, met een maximum van een jaar). Dat is handig om een defibrillator blijvend opzij te zetten waarvan u weet dat hij is verwijderd of ontoegankelijk is, of om een verplaatsing voor te bereiden. Als een genegeerde defibrillator u bij een noodzoekopdracht had kunnen worden voorgesteld, meldt de resultatenlijst dat: {{q:results.hiddenIgnored.one}}</p>
+    <p>Om een fout voor iedereen te laten herstellen, moet u zich wenden tot de beheerder of tot mij, afhankelijk van het hierboven beschreven geval.</p>
+
+
+    <h2 id="dae">Wat is een defibrillator?</h2>
+    <p>Een automatische externe defibrillator (AED) is een draagbaar toestel dat is ontworpen om door iedereen te kunnen worden gebruikt, ook zonder opleiding. Bij een hartstilstand plaatst men twee elektroden zoals het toestel aangeeft: het analyseert het hartritme, beslist zelf of een shock zinvol is en geeft stap voor stap gesproken aanwijzingen. Het geeft alleen een shock als dat nodig is.</p>
+    <p>Sommige defibrillatoren zijn bedoeld voor kinderen (specifieke elektroden of instelling), andere niet: daarom vraagt de noodzoekopdracht of de persoon een volwassene of een kind is. Voor zover ik begrijp, reserveren fabrikanten elektroden voor kinderen meestal voor jonge kinderen onder de 8&nbsp;jaar of onder de 25&nbsp;kg. De Franse aanbevelingen van de Conseil français de réanimation cardio-pulmonaire (<a href="https://www.cfrc.fr/reanimation-enfant" rel="noopener">pagina “Réanimation pédiatrique”, in het Frans</a>, die steunt op de Europese aanbevelingen van 2025) nuanceren dat: bij een kind ouder dan een jaar kan een openbare defibrillator ook zonder materiaal voor kinderen worden gebruikt, en zijn elektroden voor volwassenen bij gebrek daaraan aanvaardbaar. Bel in alle gevallen eerst de hulpdiensten, die u aan de telefoon begeleiden.</p>
+    <p><em>Deze informatie wordt alleen ter informatie gedeeld, volgens mijn begrip: het is geen medisch advies.</em></p>
+
+    <h2 id="utiles">Nuttige links</h2>
+    <p>Deze links worden alleen ter informatie aangeboden, zonder partnerschap of tegenprestatie, en hun inhoud valt onder de verantwoordelijkheid van hun uitgevers. De gelinkte pagina's zijn in het Frans.</p>
+    <ul>
+      <li><a href="https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/numeros-utiles-nationaux" rel="noopener">Nationale noodnummers</a> (Ma Sécurité, Frans ministerie van Binnenlandse Zaken), waaronder 114 per sms voor dove, slechthorende of niet-sprekende personen.</li>
+      <li><a href="https://www.croix-rouge.fr/les-gestes-de-premiers-secours/arret-cardiaque" rel="noopener">Hartstilstand: hoe geef je hartmassage</a> (Franse Rode Kruis).</li>
+      <li><a href="https://www.fedecardio.org/je-m-informe/appelez-le-15-massez-defibrillez/" rel="noopener">Bel 15, masseer, defibrilleer</a> (Franse Hartstichting).</li>
+      <li><a href="https://www.securite-civile.interieur.gouv.fr/sengager/engagement-citoyen/se-former-aux-gestes-qui-sauvent" rel="noopener">Levensreddende eerstehulpgebaren leren</a> (Sécurité civile, Frans ministerie van Binnenlandse Zaken).</li>
+      <li><a href="https://geodae.atlasante.fr/apropos" rel="noopener">Géo'DAE</a>, het officiële portaal van de nationale defibrillatordatabase, om een defibrillator aan te melden of te corrigeren (voor beheerders).</li>
+    </ul>
+
+    <h2 id="lien">Rechtstreeks naar de kaart linken</h2>
+    <p>Het is mogelijk de kaart rechtstreeks op een bepaalde plek te openen door een parameter toe te voegen aan het einde van het webadres van de site:</p>
+    <ul>
+      <li><code>{{site}}{{file:index}}?cp=75002</code>: een postcode. Als meerdere gemeenten dezelfde postcode delen, toont de kaart ze allemaal.</li>
+      <li><code>{{site}}{{file:index}}?code_insee=75102</code>: de INSEE-code van een gemeente, nauwkeuriger: hij wijst één enkele gemeente aan. Voor Parijs, Lyon en Marseille zijn dit de codes van de arrondissementen, of die van de hele stad.</li>
+    </ul>
+    <p>Als beide worden opgegeven, wordt alleen de INSEE-code gebruikt; de postcode wordt alleen gebruikt als de INSEE-code onbekend is. Wordt geen van beide herkend, dan opent de kaart gewoon. De centrering is bij benadering (het midden van de gemeente): de link garandeert niets over de aanwezigheid van defibrillatoren op die plek.</p>
+    <p>Om een bepaalde defibrillator te delen, is de knop {{q:share.button}} op zijn kaartje het eenvoudigst. Die maakt een link zoals <code>{{site}}{{file:index}}?gps_dae=43.59947,1.43335&amp;id_dae=12345</code>: <code>gps_dae</code> geeft de coördinaten van de defibrillator (breedtegraad, lengtegraad) en het optionele <code>id_dae</code> bepaalt welke het is als meerdere defibrillatoren dezelfde coördinaten hebben. De kaart opent op straatniveau en toont de gegevens van de defibrillator als die nog bekend is. Deze parameter gaat voor op de andere twee. Omdat de gegevens veranderen, kan een defibrillator sinds het maken van de link zijn verplaatst of verwijderd.</p>
+
+{{partial:widget}}
+    <h2 id="credits">Bronvermelding</h2>
+    <ul>
+      <li><strong>Defibrillatoren</strong>: nationale database Géo'DAE, open data onder de <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte 2.0</a>.</li>
+      <li><strong>Achtergrondkaart</strong>: © bijdragers van <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>, onder de ODbL-licentie. Kaartbibliotheek: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>.</li>
+      <li><strong>Adreszoekfunctie</strong>: Géoplateforme van het IGN.</li>
+      <li><strong>Logo</strong>: persoonlijke bewerking van het pictogram ISO 7010 E010 (“automatische externe defibrillator”), gepubliceerd in het publiek domein (CC0) op Wikimedia Commons, waarin het hart is vervangen door Frankrijk. Dit logo is geen officieel merk (zie “Een onofficiële site”).</li>
+      <li><strong>Gemeenten en postcodes</strong>: <a href="https://geo.api.gouv.fr/" rel="noopener">API Géo</a> (DINUM), op basis van de adresgegevens op adresse.data.gouv.fr, onder de <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte (Franse open licentie)</a>.</li>
+      <li><strong>Schoolvakanties</strong>: “Le calendrier scolaire”, gepubliceerd door het Franse ministerie van Nationale Opvoeding op <a href="https://data.education.gouv.fr/explore/dataset/fr-en-calendrier-scolaire/" rel="noopener">data.education.gouv.fr</a>, onder de <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte 2.0</a>.</li>
+    </ul>
+
+    <h2 id="origine">Het oorspronkelijke idee</h2>
+    <p>Deze site is in eerste instantie bedacht voor <strong>privégebruik</strong>: snel een defibrillator (AED) in de buurt vinden, rekening houdend met het tijdstip, de waarschijnlijke staat van de defibrillator en of de persoon die geholpen moet worden een volwassene of een kind is.</p>
+    <p>Uiteindelijk is de site openbaar en voor iedereen toegankelijk gemaakt en zo goed mogelijk vertaald in verschillende talen, in de veronderstelling dat hij van nut zou kunnen zijn.</p>
+    <p>Concreet geldt hier: <strong>geen reclame</strong>, geen commerciële partner, geen sponsor, geen productplaatsing, <strong>geen account</strong> om aan te maken, geen abonnement of betaalde dienst (onderaan deze pagina staat een vrijwillige donatielink) en <strong>geen gegevensverzameling van mijn kant</strong>: geen hulpmiddel voor bezoekersmeting, geen gebruikersdatabase, geen formulier.</p>
+
+    <h2 id="soutien">Deze site steunen (vrijwillig)</h2>
+    <p>Deze site is gratis en ik ben niet van plan dat te veranderen. Als u dit initiatief wilt aanmoedigen, kunt u vrijelijk bijdragen. Het is <strong>volledig vrijwillig en zonder tegenprestatie</strong>: een donatie geeft geen recht op enige dienst of bijzondere behandeling en is niet aftrekbaar van de belasting.</p>
+{{partial:don}}
+
+    <h2 id="mentions">Juridische informatie</h2>
+    <p><strong>Een onofficiële site.</strong> Deze site is een persoonlijk, onafhankelijk project, niet-professioneel uitgegeven door een particulier, met inachtneming van de Franse wet (artikel&nbsp;6, III, 2 van de wet van 21&nbsp;juni 2004 inzake het vertrouwen in de digitale economie). Hij is niet officieel en niet verbonden aan de Franse staat, de hulpdiensten (SAMU, brandweer, enz.), de gezondheidsautoriteiten of het team van Géo'DAE, en heeft van hen geen goedkeuring gekregen. Symbolen, namen en kleuren die aan defibrillatoren of hulpdiensten doen denken, worden uitsluitend ter illustratie gebruikt en impliceren geen enkel officieel verband.</p>
+    <p><strong>Hosting:</strong> GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, Verenigde Staten (<a href="https://github.com" rel="noopener">github.com</a>), +1&nbsp;877&nbsp;448&nbsp;4820.</p>
+    <p><strong>Contact</strong>: <a id="contact-link" href="#mentions">Neem contact op</a> <noscript>(schakel JavaScript in om het e-mailadres te tonen)</noscript></p>
+
+    <p class="foot" id="dataset-info"></p>
+    </div>
+    {{partial:open-map-end}}

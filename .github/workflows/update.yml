@@ -1,0 +1,100 @@
+name: Mise à jour des données et publication
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # toutes les heures
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tests de la logique et de la construction des données
+        run: |
+          node tests/app.test.js
+          TZ=America/Guadeloupe node tests/app.test.js
+          node tests/i18n.test.js
+          node tests/en.test.js
+          node tests/es.test.js
+          node tests/de.test.js
+          node tests/it.test.js
+          node tests/nl.test.js
+          node tests/pt.test.js
+          node tests/places.test.js
+          node tests/contact.test.js
+          node tests/widget.test.js
+          python -I scripts/build_site.py --check
+          python -m unittest discover -s tests
+
+      - name: Récupérer les jeux déjà publiés
+        run: |
+          mkdir -p data
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git fetch --depth=1 origin gh-pages:refs/remotes/origin/gh-pages
+            git worktree add --detach site origin/gh-pages
+            [ -d site/data ] && cp -r site/data/. data/
+          fi
+          [ -f data/index.json ] && cp data/index.json "$RUNNER_TEMP/index.before.json" || true
+          [ -f data/vacances.json ] && cp data/vacances.json "$RUNNER_TEMP/vacances.before.json" || true
+
+      - name: Chercher et construire un nouveau jeu
+        run: python -I scripts/update.py
+
+      - name: Construire la table des communes (liens ?cp= et ?code_insee=)
+        # si la source est indisponible, la table déjà publiée est conservée ; sans table, les liens directs sont simplement ignorés
+        run: python -I scripts/build_places.py || echo "::warning::table des communes non mise à jour"
+
+      - name: Construire le calendrier des vacances scolaires (horaires « hors vacances scolaires »)
+        # si la source est indisponible, le calendrier déjà publié est conservé ; sans calendrier, ces horaires restent « incertains »
+        run: python -I scripts/build_vacances.py || echo "::warning::calendrier des vacances non mis à jour"
+
+      - name: Vérifier la cohérence des données avant publication
+        run: python -I tests/check_data.py
+
+      - name: Décider de publier
+        id: decide
+        run: |
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ] || ! cmp -s data/index.json "$RUNNER_TEMP/index.before.json" \
+             || { [ -f data/vacances.json ] && ! cmp -s <(sed 's/"updated":"[^"]*"//' data/vacances.json) <(sed 's/"updated":"[^"]*"//' "$RUNNER_TEMP/vacances.before.json" 2>/dev/null); }; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Rien de nouveau : pas de publication."
+          fi
+
+      - name: Publier sur la branche gh-pages (réécrite en un seul commit)
+        if: steps.decide.outputs.deploy == 'true'
+        env:
+          INDEXABLE: ${{ vars.INDEXABLE }}
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+          BING_SITE_VERIFICATION: ${{ vars.BING_SITE_VERIFICATION }}
+        run: |
+          mkdir out
+          # toutes les pages générées de la racine (une par langue)
+          cp *.html robots.txt sitemap.xml out/
+          cp -r css js icons vendor out/
+          rsync -a --exclude raw data/ out/data/
+          touch out/.nojekyll
+          python -I scripts/publish_settings.py out   # indexation et balises de vérification des moteurs de recherche, selon les variables du dépôt (voir README)
+          python -I scripts/stamp_assets.py out   # marque de version sur css/js : un fichier modifié est rechargé par les navigateurs
+          cd out
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Publication $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" gh-pages

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carte-dae.github.io/sitemap.xml

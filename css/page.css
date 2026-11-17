@@ -1,0 +1,165 @@
+:root { color-scheme: light dark; --hl-bg: #eaf2fd; --hl-border: #1a5fb4; --bg: #fff; --fg: #1d1d1f; --muted: #555; --link: #1a5fb4; --alert-bg: #fdecea; --alert-border: #b00020; }
+@media (prefers-color-scheme: dark) {
+  :root { --hl-bg: #1c2a3d; --hl-border: #7ab3ff; --bg: #17181a; --fg: #ececec; --muted: #aaa; --link: #7ab3ff; --alert-bg: #3a1c20; --alert-border: #ff6b7d; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 16px; }
+h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+a { color: var(--link); }
+code { overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .86em; padding: 1px 5px; border-radius: 5px; background: #eef1f4; color: #1d1d1f; }
+ul, ol { padding-left: 1.2rem; }
+li { margin: 6px 0; }
+.alert { background: var(--alert-bg); border-left: 5px solid var(--alert-border); padding: 12px 14px; border-radius: 6px; }
+.back { margin: 8px 0; }
+.foot { color: var(--muted); font-size: .9rem; margin-top: 28px; }
+
+.don { display: inline-flex; align-items: center; gap: 10px; padding: 11px 20px; border-radius: 999px; background: #0074d4; color: #fff; font-weight: 600; text-decoration: none; box-shadow: 0 2px 6px rgba(0, 0, 0, .25); transition: background .15s ease; }
+.don:hover, .don:focus-visible { background: #005fb0; }
+.don:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+.don .cup { width: 28px; height: 28px; flex: none; }
+.don .steam path { animation: steam 2.6s ease-in-out infinite; transform-box: fill-box; }
+.don .steam path:nth-child(2) { animation-delay: .5s; }
+.don .steam path:nth-child(3) { animation-delay: 1s; }
+/* Logo animé de la page Guide (templates/partials/logo-anime.html, généré par sources/generer_icones.py --logo-anime).
+   Un cycle de 6,5 s : deux ondes (on trouve le défibrillateur), un contour vert qui monte autour de l'éclair (charge), trois clignotements
+   (bip… bip… bip…), puis le choc : l'éclair jaune dans un cœur et des rayons orange, une fraction de seconde ; le reste du cycle est une pause.
+   Tout est découpé par le contour de la France. Sans animation (réduction demandée), on voit le logo d'origine. */
+.title .logo-anim { flex: none; }
+.logo-anim { --cycle: 6.5s; }
+.logo-anim .la-wave1, .logo-anim .la-wave2 { transform-box: fill-box; transform-origin: center; opacity: 0; animation: la-wave1 var(--cycle) ease-out infinite; }
+.logo-anim .la-wave2 { animation-name: la-wave2; }
+@keyframes la-wave1 { 0% { transform: scale(.4); opacity: 0; } 2% { opacity: .85; } 17% { transform: scale(2.4); opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
+@keyframes la-wave2 { 0%, 6% { transform: scale(.4); opacity: 0; } 8% { opacity: .85; } 23% { transform: scale(2.4); opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
+.logo-anim .la-big { clip-path: inset(100% 0 0 0); animation: la-big var(--cycle) linear infinite; }
+@keyframes la-big {
+  0%, 20% { clip-path: inset(100% 0 0 0); opacity: 1; }
+  48% { clip-path: inset(0 0 0 0); opacity: 1; }
+  51% { opacity: 1; } 51.5% { opacity: .12; } 54% { opacity: .12; } 54.5% { opacity: 1; }
+  57% { opacity: 1; } 57.5% { opacity: .12; } 60% { opacity: .12; } 60.5% { opacity: 1; }
+  63% { opacity: 1; } 63.5% { opacity: .12; } 66% { opacity: .12; } 66.5% { opacity: 1; }
+  71.9% { clip-path: inset(0 0 0 0); opacity: 1; }
+  72%, 100% { clip-path: inset(100% 0 0 0); opacity: 0; }
+}
+.logo-anim .la-flash { opacity: 0; animation: la-flash var(--cycle) linear infinite; }
+@keyframes la-flash { 0%, 71.9% { opacity: 0; } 72% { opacity: 1; } 75.5% { opacity: 1; } 76%, 100% { opacity: 0; } }
+.logo-anim .la-zap { opacity: 0; animation: la-zap var(--cycle) linear infinite; }
+@keyframes la-zap { 0%, 71.9% { opacity: 0; } 72%, 73% { opacity: 1; } 73.1%, 73.8% { opacity: 0; } 73.9%, 75.2% { opacity: 1; } 75.3%, 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .logo-anim * { animation: none !important; } }
+
+/* Générateur de lien vers la carte (templates/partials/widget.html, js/widget.js) */
+.widget-gen { display: grid; gap: 12px; margin: 12px 0 24px; padding: 14px; border: 1px solid var(--muted); border-radius: 10px; }
+.widget-gen fieldset { margin: 0; padding: 8px 12px 10px; border: 1px solid var(--muted); border-radius: 8px; }
+.widget-gen legend { padding: 0 6px; font-weight: 600; }
+.widget-gen fieldset > label { display: inline-block; margin: 0 16px 4px 0; }
+.wg-field { display: grid; gap: 4px; font-weight: 600; }
+.wg-place-fields { display: grid; gap: 10px 14px; align-items: start; margin-top: 8px; grid-template-columns: 7.5rem minmax(0, 1fr); } /* le code est court (5 caractères), la place va au nom de la commune */
+@media (max-width: 520px) { .wg-place-fields { grid-template-columns: minmax(0, 1fr); } .wg-place-fields .wg-field:first-child { max-width: 7.5rem; } } /* sur téléphone : le code, court, puis le nom sur toute la largeur */
+.widget-gen input[type="text"], .widget-gen select, .widget-gen textarea { box-sizing: border-box; width: 100%; max-width: 100%; padding: 8px 10px; font: inherit; font-weight: 400; border: 1px solid var(--muted); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.widget-gen input:disabled { opacity: .5; }
+.widget-gen textarea { font: .8rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; resize: vertical; }
+.wg-check { display: flex; align-items: center; gap: 8px; }
+.wg-label { margin: 4px 0 -6px; }
+.wg-preview { display: flex; align-items: center; min-height: 96px; padding: 18px; border: 1px dashed var(--muted); border-radius: 8px; background: #f4f6f5; color: #1d1d1f; }
+.wg-warn { margin: 8px 0 0; color: #b00020; }
+.wg-warn[hidden], .wg-place-fields[hidden] { display: none; }
+.wg-copy { padding: 10px 20px; border: 0; border-radius: 999px; background: #237F52; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.wg-copy:hover { background: #1d6b45; }
+@media (prefers-color-scheme: dark) { .wg-warn { color: #ff8a98; } }
+
+.sim { padding: 12px 14px; border: 1px solid var(--muted); border-radius: 8px; }
+.sim-title { margin: 0 0 8px; font-size: .9rem; }
+.sim-quick { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.sim .sim-quick .sim-go { height: auto; min-height: 42px; padding: 8px 12px; line-height: 1.25; }
+.sim select, .sim input, .sim .sim-go { box-sizing: border-box; height: 42px; margin: 0; padding: 0 12px; font: inherit; border-radius: 6px; border: 1px solid var(--muted); background: var(--bg); color: var(--fg); }
+.sim .sim-go { cursor: pointer; font-weight: 700; background: #f5a300; color: #1d1d1f; border: 2px solid #1d1d1f; text-align: left; }
+.sim .sim-go:hover { background: #ffb81f; }
+.sim-custom { margin-top: 12px; font-size: .9rem; }
+.sim-custom summary { cursor: pointer; color: var(--link); }
+.sim-custom form { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px 14px; margin-top: 10px; }
+.sim-custom label { display: flex; flex-direction: column; gap: 4px; }
+.sim-error { margin: 10px 0 0; color: var(--alert-border); }
+@keyframes steam { 0% { opacity: 0; transform: translateY(3px); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(-4px); } }
+@media (prefers-reduced-motion: reduce) { .don .steam path { animation: none; opacity: 1; } .don { transition: none; } }
+.toc { margin: 16px 0 0; padding: 10px 14px; border: 1px solid var(--muted); border-radius: 8px; }
+.toc ul { margin: 0; padding-left: 1.2rem; }
+.toc li { margin: 2px 0; }
+.toc .toc-key a { margin: 0 -6px; padding: 1px 6px; background: var(--hl-bg); border-radius: 4px; font-weight: 700; } /* le fond déborde de 6 px de chaque côté : le texte reste aligné sur les autres entrées */
+h2 { scroll-margin-top: 12px; }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+.highlight { margin: 28px 0 0; padding: 4px 16px 16px; background: var(--hl-bg); border-left: 5px solid var(--hl-border); border-radius: 6px; }
+.highlight h2 { margin-top: 12px; }
+.title { display: flex; align-items: center; gap: 14px; margin: 8px 0 16px; }
+.title img { flex: none; border-radius: 14px; }
+.title h1 { margin: 0; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.sim-holiday { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 12px; cursor: pointer; }
+.sim .sim-holiday input { flex: none; width: 22px; height: 22px; margin: 2px 0 0; padding: 0; accent-color: #b36200; }
+.sim-holiday small { display: block; color: var(--muted); font-size: .85rem; line-height: 1.35; }
+.sim.is-holiday, .sim.is-vacation { border: 2px solid #f5a300; padding: 11px 13px; }
+/* les textes viennent du HTML de chaque langue */
+.sim.is-holiday .sim-go::after { content: var(--holiday-suffix, ""); }
+.sim.is-vacation .sim-go::after { content: var(--vacation-suffix, ""); }
+.sim.is-holiday.is-vacation .sim-go::after { content: var(--holiday-suffix, "") var(--vacation-suffix, ""); }
+.langs { margin: 8px 0; text-align: right; font-size: .9rem; }
+.langs a[aria-current] { font-weight: 700; color: inherit; text-decoration: none; }
+.open-map { margin: 16px 0; }
+/* Le premier bouton « Ouvrir la carte » reste en haut de l'écran pendant qu'on lit ; il part avec la fin de la zone, quand le bouton du bas apparaît */
+html { scroll-padding-top: 84px; }
+/* Le premier bouton « Ouvrir la carte » reste en haut de l'écran ; en se fixant, il se déploie en une barre pleine largeur (logo, texte, flèche) :
+   largeur, hauteur, arrondi, ombre, logo et flèche changent ensemble, avec la même courbe. La hauteur de la zone est fixe : le texte dessous ne bouge pas. */
+.open-map-sentinel { display: block; height: 1px; margin-bottom: -1px; pointer-events: none; }
+.open-map-sticky { --ease: cubic-bezier(.22, .9, .28, 1); --ease-in-out: cubic-bezier(.45, 0, .2, 1); position: sticky; top: 0; z-index: 10; box-sizing: border-box; height: 80px; margin: 0 -16px; padding: 10px 16px 0; background: linear-gradient(to bottom, var(--bg) 72%, transparent); transition: opacity .2s; }
+.open-map-sticky.is-hidden { opacity: 0; pointer-events: none; }
+.open-map-sticky .map-button, .open-map-end .map-button { --mb-gap: 3px; --mb-logo: 60px; /* écart logo-bord du bouton et taille du logo, cadre blanc compris */
+  display: flex; align-items: center; box-sizing: border-box; max-width: 100%; line-height: 1.2; }
+.open-map-sticky .map-button { width: var(--mb-w, fit-content); height: 50px; padding: 0 22px; border-radius: 25px;
+  /* repli (retour à l'état de base) : plus vif que le déploiement, le logo et la flèche s'effacent d'abord */
+  transition: width .38s var(--ease-in-out), height .38s var(--ease-in-out), padding .38s var(--ease-in-out), border-radius .38s var(--ease-in-out), box-shadow .25s ease, background-color .2s; }
+.map-button-text { flex: 1 1 auto; min-width: 0; }
+/* le logo (animé) est cerclé d'un liseré blanc de 1 px : on voit son contour, et le vert plus foncé du survol ne change visiblement pas le logo */
+.map-button-logo { flex: none; box-sizing: border-box; width: 0; height: var(--mb-logo); margin-right: 0; opacity: 0; overflow: hidden; border: 0 solid #fff; border-radius: calc((var(--mb-logo) - 2px) * .18 + 1px);
+  transition: width .38s var(--ease-in-out), margin .38s var(--ease-in-out), opacity .12s ease, border-width .38s var(--ease-in-out); }
+.map-button-logo .logo-anim { display: block; width: 100%; height: 100%; }
+.map-button-arrow { flex: none; width: 0; margin-left: 0; opacity: 0; transform: translateX(-10px); transition: width .3s var(--ease-in-out), margin .3s var(--ease-in-out), opacity .1s ease, transform .3s var(--ease-in-out); }
+/* barre déployée : hauteur = logo + 2 écarts ; le rayon du bouton = écart + rayon extérieur du logo, donc les deux coins ont le même centre.
+   C'est l'état final du bouton fixé, et l'état de départ du bouton du bas de page (identique, sans transition). */
+.open-map-sticky.is-stuck .map-button, .open-map-end .map-button { width: 100%; height: calc(var(--mb-logo) + 2 * var(--mb-gap)); padding: 0 18px 0 var(--mb-gap);
+  border-radius: calc(var(--mb-gap) + (var(--mb-logo) - 2px) * .18 + 1px); box-shadow: 0 10px 28px rgba(16, 40, 28, .3), 0 2px 6px rgba(0, 0, 0, .22); }
+.open-map-sticky.is-stuck .map-button { transition: width .6s var(--ease), height .6s var(--ease), padding .6s var(--ease), border-radius .6s var(--ease), box-shadow .6s var(--ease), background-color .2s; }
+.open-map-sticky.is-stuck .map-button-logo, .open-map-end .map-button-logo { width: var(--mb-logo); margin-right: 14px; opacity: 1; border-width: 1px; }
+.open-map-sticky.is-stuck .map-button-logo { transition: width .6s var(--ease), margin .6s var(--ease), opacity .35s ease .12s, border-width .6s var(--ease); }
+.open-map-sticky.is-stuck .map-button-arrow, .open-map-end .map-button-arrow { width: 22px; margin-left: 12px; opacity: 1; transform: none; }
+.open-map-sticky.is-stuck .map-button-arrow { transition: width .6s var(--ease), margin .6s var(--ease), opacity .35s ease .15s, transform .6s var(--ease) .1s; }
+.open-map-end { margin: 28px 0 32px; }
+/* copie invisible : mesure la largeur du bouton replié. Elle ne doit subir aucune règle du bouton réel (déployé, replié, transitions) : sinon, mesurée pendant que le bouton est déployé, elle donnerait la pleine largeur */
+.map-button-ghost { position: absolute !important; left: 0; top: 0; visibility: hidden; pointer-events: none; white-space: nowrap; display: inline-block !important; width: auto !important; max-width: none !important; height: auto !important;
+  padding: 12px 22px !important; border-radius: 999px !important; box-shadow: none !important; transition: none !important; line-height: 1.6 !important; }
+@media (prefers-reduced-motion: reduce) { .open-map-sticky .map-button, .map-button-logo, .map-button-arrow { transition: none; } }
+.map-button { display: inline-block; padding: 12px 22px; border-radius: 999px; background: #237F52; color: #fff; font-weight: 700; text-decoration: none; }
+.map-button:hover { background: #1d6b45; }
+
+#contact-address { font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+
+/* « Lire une fiche » : le point, la fiche (les règles de css/style.css utiles à popupHtml) et le texte qui l'explique, à droite sur écran large */
+.infocard-example { display: grid; grid-template-columns: 44px 300px minmax(0, 1fr); gap: 14px; align-items: start; margin: 22px 0; }
+.infocard-marker { width: 44px; height: 44px; margin-top: 6px; }
+.infocard-marker svg { display: block; }
+.infocard-text { margin: 4px 0 0; font-size: .95rem; }
+.infocard { box-sizing: border-box; padding: 13px 24px 13px 20px; border-radius: 12px; background: #fff; color: #1d1d1f; box-shadow: 0 3px 14px rgba(0, 0, 0, .4); line-height: 1.4; }
+.infocard .popup h3 { margin: 0 0 4px; font-size: 15px; }
+.infocard .popup p { margin: 2px 0; font-size: 13px; }
+.infocard .maint { font-weight: bold; }
+.infocard .maint-ok { color: #1b873f; }
+.infocard .maint-doubt { color: #b00020; }
+.infocard .maint-unknown { color: #666; }
+.infocard .popup .note { color: #b00020; }
+.infocard .popup .detail { color: #444; }
+.infocard .card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px -4px 0 0; }
+.infocard .card-actions a, .infocard .card-actions button { flex: 1; display: flex; align-items: center; justify-content: center; padding: 8px; border: none; border-radius: 8px; background: #eee; color: #000; text-decoration: none; font: inherit; font-size: 13px; cursor: pointer; }
+.infocard .card-actions .primary { background: #1a6fd1; color: #fff; font-weight: bold; }
+.infocard .card-actions .share-btn { flex: 0 0 auto; }
+.infocard .popup-problem { display: flex; justify-content: space-between; gap: 12px; margin: 2px -4px 0 0; }
+.infocard .card-problem { flex: none; margin: 0; padding: 4px 0; border: none; background: none; color: #666; font: inherit; font-size: 12px; text-decoration: underline; text-align: right; cursor: pointer; }
+@media (max-width: 760px) { .infocard-example { grid-template-columns: 44px minmax(0, 1fr); gap: 8px 14px; } .infocard-text { grid-column: 2; margin: 0; } }
+

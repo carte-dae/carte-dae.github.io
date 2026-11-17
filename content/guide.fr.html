@@ -1,0 +1,190 @@
+    <div class="title">{{partial:logo-anime}}<h1>{{t:guide.title}}</h1></div>
+
+    <p>Ce site montre sur une <a href="{{page:index}}">carte</a> la position des défibrillateurs (DAE&nbsp;: <a href="#dae">c'est quoi&nbsp;?</a>) de France, et donne dans une <strong>fiche</strong> tous les détails connus sur chacun&nbsp;: adresse, horaires, état probable, adaptation aux enfants. Il propose aussi une <strong>recherche d'urgence</strong>, qui suggère des défibrillateurs proches les plus adaptés à votre situation et qui peut aussi s'utiliser <strong>en simulation</strong>, pour s'entraîner ou se préparer à l'avance. Ce site est <strong>gratuit, <a href="#origine">bienveillant</a> et sans engagement</strong>. Il est non officiel et fourni tel quel, <strong>aux risques et périls de la personne qui l'utilise</strong>.</p>
+    <p class="alert"><strong>En cas d'arrêt cardiaque ou d'urgence vitale, appelez d'abord le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> (SMS&nbsp;: <a href="sms:114">114</a>).</strong> Les secours vous guident, et peuvent vous orienter vers un défibrillateur. Ce site ne les remplace pas.</p>
+    <div class="sticky-zone">
+    {{partial:open-map-sticky}}
+
+
+    <nav class="toc" aria-label="{{a:guide.tocLabel}}"><ul>
+      <li class="toc-key"><a href="#preparer">Préparez-vous à l'avance</a></li>
+      <li><a href="#lire">Lire une fiche</a></li>
+      <li><a href="#limites">Limites et risques</a></li>
+      <li><a href="#donnees">D'où viennent les données</a></li>
+      <li><a href="#position">Votre position et vos données</a></li>
+      <li><a href="#erreur">Une erreur dans une fiche&nbsp;?</a></li>
+      <li><a href="#dae">C'est quoi un défibrillateur&nbsp;?</a></li>
+      <li><a href="#utiles">Liens utiles</a></li>
+      <li><a href="#lien">Faire un lien direct vers la carte</a></li>
+      <li><a href="#credits">Crédits</a></li>
+      <li><a href="#origine">L'idée d'origine</a></li>
+      <li><a href="#soutien">Soutenir ce site (facultatif)</a></li>
+      <li><a href="#mentions">Mentions légales</a></li>
+    </ul></nav>
+
+
+    <section class="highlight" aria-labelledby="preparer">
+    <h2 id="preparer">Préparez-vous à l'avance</h2>
+    <p>Le pire moment pour découvrir où se trouve un défibrillateur est celui où on en a besoin. <strong>Anticipez&nbsp;: repérez votre environnement avant l'urgence.</strong></p>
+    <ul>
+      <li><strong>Simulez des situations réalistes</strong>, depuis les lieux où vous passez du temps (domicile, travail, école, crèche, club de sport, famille, etc.). Lancez la recherche d'urgence <em>pour un adulte</em>, puis <em>pour un enfant</em>, et regardez ce que le site propose.</li>
+      <li><strong>Pensez à l'heure</strong>&nbsp;: un défibrillateur dans une mairie, un gymnase ou un magasin n'est probablement pas utilisable un dimanche soir ou la nuit. Une urgence pour votre enfant tard un dimanche soir ne donnera probablement pas les mêmes options qu'une urgence pour un adulte en pleine journée. Lisez les horaires indiqués sur les fiches, et cherchez les défibrillateurs accessibles 24h/24 près de chez vous.</li>
+      <li><strong>Repérez en vrai l'emplacement des défibrillateurs</strong> si vous le pouvez&nbsp;: passez devant, vérifiez qu'il est bien là et comment on y accède.</li>
+      <li>Autorisez <strong>à l'avance</strong> l'accès à votre position dans votre navigateur (géolocalisation), et entraînez-vous à l'indiquer à la main avec {{q:pos.changeMine}}.</li>
+      <li>Partagez avec vos proches les défibrillateurs repérés autour de chez vous&nbsp;: le bouton {{q:share.button}} de chaque fiche vous y aide (voir aussi «&nbsp;<a href="#lien">Faire un lien direct vers la carte</a>&nbsp;»).</li>
+    </ul>
+
+    <h3>Simuler une urgence à une autre heure</h3>
+    <p>Choisissez un jour et une heure&nbsp;: la carte s'ouvre en <strong>mode simulation</strong>, avec un bandeau orange bien visible et un bouton pour revenir au mode normal. Le jour de la semaine et l'heure comptent. Le jour simulé n'est ni férié, ni en vacances, sauf si vous cochez {{q:sim.form.holiday}} ou {{q:sim.form.vacation}}.</p>
+{{partial:sim-form}}
+    <h3 id="accueil">Un raccourci sur l'écran d'accueil</h3>
+    <p>Pour ouvrir le site en un geste, vous pouvez l'ajouter à l'écran d'accueil de votre téléphone. C'est un simple raccourci vers cette page&nbsp;: il ne s'installe pas comme une application et ne fonctionne pas sans connexion.</p>
+    <ul>
+      <li><strong>iPhone (Safari)</strong>&nbsp;: touchez le bouton de partage (un carré avec une flèche), puis «&nbsp;Sur l'écran d'accueil&nbsp;».</li>
+      <li><strong>Android (Chrome)</strong>&nbsp;: touchez le menu ⋮ (trois points), puis «&nbsp;Ajouter à l'écran d'accueil&nbsp;».</li>
+    </ul>
+    <p>Les intitulés exacts peuvent varier selon votre appareil et la version de son système (iOS, Android…).</p>
+    </section>
+
+    <h2 id="lire">Lire une fiche</h2>
+    <p>Sur la carte, chaque défibrillateur est un <strong>point</strong>&nbsp;: le <strong>rond</strong> au centre résume l'<strong>accès</strong> (vert&nbsp;: accessible à toute heure&nbsp;; orange&nbsp;: horaires limités&nbsp;; bleu&nbsp;: horaires inconnus), l'<strong>anneau</strong> autour résume la <strong>maintenance</strong> (vert plein&nbsp;: à jour&nbsp;; gris en trois arcs&nbsp;: des dates manquent&nbsp;; rouge en petits tirets&nbsp;: électrodes ou batterie périmées, ou maintenance ancienne), et un <strong>visage de bébé</strong> signale un défibrillateur déclaré prévu pour les enfants (sans visage de bébé, la fiche indique s'il ne l'est pas ou si l'information manque). En touchant un point, vous ouvrez sa <strong>fiche</strong>. Voici cinq exemples fictifs.</p>
+    <div class="infocard-example" data-infocard="0"><p class="infocard-text"><strong>Rond vert, anneau plein et vert</strong>&nbsp;: accessible à toute heure, de l'extérieur, et maintenance à jour. C'est le cas le plus rassurant. Notez qu'ici le défibrillateur n'est pas prévu pour un enfant.</p></div>
+    <div class="infocard-example" data-infocard="1"><p class="infocard-text"><strong>Rond orange</strong>&nbsp;: accessible seulement à certaines heures (ici en semaine, et le samedi matin). Les horaires sont résumés. <strong>Anneau gris en trois arcs</strong>&nbsp;: la maintenance n'est pas datée, donc le site ne peut pas dire qu'elle est à jour.</p></div>
+    <div class="infocard-example" data-infocard="2"><p class="infocard-text"><strong>Pédiatrique</strong>&nbsp;: la fiche l'indique, et les électrodes pour enfant ont leur propre date de péremption. Ici, l'accès est limité aux jours d'école et il faut demander la clé.</p></div>
+    <div class="infocard-example" data-infocard="3"><p class="infocard-text"><strong>Rond bleu</strong>&nbsp;: aucun horaire n'est renseigné, le site ne sait donc pas si le lieu est ouvert. <strong>Anneau rouge en petits tirets</strong>&nbsp;: des électrodes sont périmées et la dernière maintenance est ancienne. Le défibrillateur est peut-être utilisable, mais le site vous le dit avec prudence.</p></div>
+    <div class="infocard-example" data-infocard="4"><p class="infocard-text"><strong>Il se peut qu'il ne soit pas en place</strong>&nbsp;: les notes de l'exploitant le laissent entendre, et la déclaration n'est pas encore validée. Le site ne le propose en urgence que s'il n'y a rien d'autre, et il vous montre ce passage pour que vous jugiez par vous-même.</p></div>
+    <p><em>Dans ces exemples, {{q:card.problem}}, {{q:card.go}} et {{q:share.button}} ne font rien&nbsp;: sur la carte, ils ouvrent le signalement, l'itinéraire et le partage.</em></p>
+
+    <h2 id="limites">Limites et risques</h2>
+    <ul>
+      <li>Le site <strong>peut commettre des erreurs</strong>&nbsp;: défibrillateur déplacé, utilisé, volé, verrouillé, mal localisé, électrodes périmées, horaires faux.</li>
+      <li><strong>France uniquement.</strong> Les données couvrent la France métropolitaine (Corse comprise), les départements d'outre-mer (Guadeloupe, Martinique, Guyane, La Réunion, Mayotte), où elles sont souvent moins complètes, et Saint-Pierre-et-Miquelon. La Polynésie française, la Nouvelle-Calédonie et Wallis-et-Futuna ne figurent pas dans la base utilisée, et le site ne connaît aucun défibrillateur à l'étranger. Près d'une frontière, un meilleur choix se trouve peut-être juste de l'autre côté, sans figurer sur la carte. En cas d'urgence dans un autre pays de l'Union européenne, le 112 fonctionne aussi.</li>
+      <li>La mention «&nbsp;accessible à cette heure-ci&nbsp;» est une <strong>estimation théorique</strong>, pas une information en temps réel. Les jours fériés sont calculés en France métropolitaine (avec les deux jours supplémentaires d'Alsace-Moselle)&nbsp;; en outre-mer, où chaque territoire a ses propres jours fériés, une règle «&nbsp;jours fériés&nbsp;» laisse l'accessibilité incertaine.</li>
+      <li><strong>Pour la plupart des défibrillateurs, les horaires ne sont pas renseignés</strong> (catégorie {{q:access.unknown}}), et {{q:filters.maintOk}} signifie seulement que les dates à surveiller (péremption des électrodes et de la batterie, dernière maintenance) sont renseignées et non dépassées, pas que le défibrillateur a été vérifié.</li>
+      <li><strong>L'estimation utilise l'heure de votre appareil.</strong> Vérifiez qu'il est à l'heure locale (fuseau horaire en réglage automatique)&nbsp;: une heure ou un fuseau mal réglé fausse les résultats. En simulation, l'heure choisie est utilisée telle quelle comme heure locale de chaque défibrillateur, quel que soit le réglage de votre appareil.</li>
+      <li><strong>Les distances sont à vol d'oiseau et les temps de marche sont des estimations</strong>&nbsp;: le trajet réel peut être plus long (obstacles, étages, accès au bâtiment).</li>
+      <li><strong>Les fermetures saisonnières ou périodiques ne sont pas prises en compte</strong>&nbsp;: théâtres, piscines, campings, stades, salles de sport… Un défibrillateur situé dans un tel lieu peut être inaccessible alors que ses horaires déclarés indiquent «&nbsp;ouvert&nbsp;». Les vacances scolaires ne comptent que si les horaires déclarés les mentionnent («&nbsp;hors vacances scolaires&nbsp;»). Certains établissements ne suivent pas exactement ce calendrier&nbsp;: un collège ou un lycée, par exemple, peut fermer plus tôt que le début officiel des vacances.</li>
+      <li>Le site est initialement rédigé en langue française. <strong>Les traductions dans les autres langues sont faites au mieux</strong>&nbsp;: une erreur ou une nuance perdue est possible, y compris dans les messages liés à l'urgence.</li>
+      <li>Les détails pratiques ajoutés par les exploitants au sujet de leurs défibrillateurs sont présentés tels quels, sans traduction.</li>
+      <li>Le site <strong>peut disparaître ou changer à tout moment</strong>, sans préavis. Les jeux de données (l'ensemble des défibrillateurs connus à une date donnée) que vous avez téléchargés restent sur votre appareil tant que vous ne les supprimez pas.</li>
+      <li>Ce n'est pas un dispositif médical et il ne donne aucun conseil médical. Pour apprendre les gestes qui sauvent, rapprochez-vous d'une formation aux premiers secours.</li>
+      <li>Aucune garantie n'est donnée, dans la limite de ce que permet la loi.</li>
+    </ul>
+
+    <h2 id="donnees">D'où viennent les données</h2>
+    <p>Les défibrillateurs proviennent de la base nationale officielle <strong>Géo'DAE</strong>, publiée en données ouvertes sur data.gouv.fr (Licence Ouverte 2.0). Elle est alimentée par les exploitants eux-mêmes&nbsp;: elle est donc <strong>déclarative</strong>, parfois incomplète ou périmée.</p>
+    <p>Pour en tirer un maximum de bénéfice, ces données sont retravaillées avant publication&nbsp;:</p>
+    <ul>
+      <li>les doublons, les défibrillateurs déclarés hors service ou supprimés et ceux dont les coordonnées sont aberrantes sont écartés&nbsp;;</li>
+      <li>le nom du lieu («&nbsp;Piscine municipale&nbsp;») est distingué de l'exploitant&nbsp;;</li>
+      <li>les dates de péremption (électrodes, batterie) et de dernière maintenance classent chaque défibrillateur en <em>à jour</em> (toutes les péremptions utiles sont renseignées et non dépassées, et la maintenance date de moins de 5&nbsp;ans), <em>ancienne ou périmée</em> (une péremption est dépassée, ou la maintenance date de plus de 5&nbsp;ans) ou <em>non confirmée</em> (une date manque). Ce seuil de 5&nbsp;ans est un choix du site, pas une obligation légale que je connaisse&nbsp;;</li>
+      <li>l'adaptation aux enfants (électrodes pédiatriques) est celle déclarée par l'exploitant&nbsp;; elle reste inconnue pour une partie des défibrillateurs&nbsp;;</li>
+      <li>les mentions «&nbsp;hors vacances scolaires&nbsp;» et «&nbsp;fermé pendant les vacances scolaires&nbsp;» sont comparées au <strong>calendrier officiel des vacances</strong> de la zone (A, B ou C) du défibrillateur&nbsp;: il est estimé fermé pendant les vacances, et lu selon ses horaires le reste du temps. En Corse, outre-mer, ou sans calendrier publié pour la date, ces horaires restent incertains&nbsp;;</li>
+      <li>les horaires, y compris ceux écrits en texte libre, sont lus pour estimer si un DAE est <em>a priori accessible à l'heure de la recherche</em>.</li>
+    </ul>
+    <p>Ces traitements sont des <strong>estimations</strong>, pas des certitudes. Un défibrillateur signalé «&nbsp;à jour&nbsp;» peut être défaillant, et un horaire peut avoir été mal interprété. Si vous constatez une erreur, <a href="#erreur">voici comment la signaler</a>.</p>
+
+
+    <h3>Des données qui ne sont pas en temps réel</h3>
+    <p>Ce que vous voyez a fait un long chemin, avec un <strong>décalage à chaque étape</strong>&nbsp;:</p>
+    <ol>
+      <li>les exploitants (communes, entreprises, associations…) déclarent leurs défibrillateurs dans la base Géo'DAE à leur propre rythme&nbsp;;</li>
+      <li>cette base est republiée sur data.gouv.fr régulièrement, parfois plusieurs fois par jour&nbsp;;</li>
+      <li>je récupère ces données, je les retravaille <strong>moi-même</strong>, puis je les republie sur ce site, à un rythme que je ne garantis pas.</li>
+    </ol>
+    <p>Ce qui s'affiche peut donc retarder de plusieurs heures, voire de plusieurs jours, sur la réalité&nbsp;: un défibrillateur déplacé ou volé, un horaire modifié, une maintenance faite depuis. La date du jeu de données utilisé est indiquée dans le menu {{q:nav.data}}.</p>
+
+
+    <h3>Choisir le jeu de données</h3>
+    <ul>
+      <li><strong>Par défaut, le site fonctionne en ligne</strong>&nbsp;: il charge les données de la zone que vous regardez, au fur et à mesure.</li>
+      <li>Dans le menu <strong>{{q:nav.data}}</strong>, vous pouvez <strong>télécharger un jeu de données</strong> complet sur votre appareil. Il y reste, avec son poids affiché, jusqu'à ce que vous le supprimiez&nbsp;: c'est vous qui décidez de ce que vous gardez.</li>
+      <li>Plusieurs jeux de données datés peuvent coexister. Si une mise à jour contient une erreur, vous pouvez revenir à un jeu de données plus ancien, <strong>à condition de l'avoir gardé sur votre appareil</strong>&nbsp;: le site ne conserve lui-même que ses trois derniers jeux de données.</li>
+      <li>Les données téléchargées limitent la dépendance au réseau pour les charger, mais <strong>le fond de carte et le chargement du site peuvent encore nécessiter une connexion</strong>. Ne comptez pas sur un fonctionnement complet sans réseau.</li>
+    </ul>
+
+
+    <h2 id="position">Votre position et vos données</h2>
+    <p>Votre position GPS est utilisée <strong>uniquement dans votre navigateur</strong> pour calculer les distances. Elle n'est envoyée à aucun serveur du projet, et je n'enregistre rien. Le site n'utilise aucun cookie.</p>
+    <p>Votre appareil conserve seulement, pour lui-même&nbsp;: vos filtres, les défibrillateurs que vous avez choisi d'ignorer (leur nom, leur commune et un résumé de leur fiche, pendant la durée choisie), le jeu de données choisi et les jeux téléchargés. Le temps d'un onglet, il garde aussi la dernière vue de la carte (centre et zoom), le lien direct reconnu et la simulation en cours, pour les retrouver quand vous revenez de cette page&nbsp;; ils disparaissent à la fermeture de l'onglet. Vous pouvez les supprimer depuis le menu {{q:nav.data}} ou en effaçant les données du site dans votre navigateur.</p>
+    <p>Utiliser le site fait cependant intervenir des <strong>services tiers</strong> que je ne contrôle pas&nbsp;:</p>
+    <ul>
+      <li><strong>GitHub</strong> héberge le site et peut conserver des journaux d'accès (adresse IP notamment). Je ne sais pas précisément ce qui est enregistré et je ne m'engage que pour moi-même.</li>
+      <li><strong>OpenStreetMap</strong> fournit le fond de carte&nbsp;: il reçoit votre adresse IP et les zones de carte que vous affichez.</li>
+      <li>La <strong>recherche d'adresse</strong> (Géoplateforme de l'IGN) reçoit le texte que vous tapez.</li>
+      <li><strong>Stripe</strong>, uniquement si vous cliquez sur le lien de don en bas de cette page&nbsp;: il a sa propre politique de confidentialité.</li>
+      <li>Le bouton {{q:card.go}} ouvre l'application de cartes de votre appareil (Plans, Google Maps…) avec les coordonnées du défibrillateur comme destination (elles peuvent ne pas indiquer l'entrée du bâtiment)&nbsp;; son fonctionnement dépend de cette application.</li>
+      <li>Le bouton {{q:share.button}} copie le lien ou les coordonnées du défibrillateur (jamais votre position), ou ouvre le menu de partage de votre appareil&nbsp;: ce que vous envoyez, et à qui, dépend de vous.</li>
+    </ul>
+    <p>Si vous m'écrivez, il s'agit d'un simple moyen de communication, comme n'importe quel courrier électronique, sans arrière-pensée&nbsp;: je ne constitue aucun fichier ni aucune base de données à partir des messages reçus. Ils restent dans ma messagerie, dont le fournisseur a sa propre politique de confidentialité, et je ne m'engage pas à répondre.</p>
+
+    <h2 id="erreur">Une erreur dans une fiche&nbsp;?</h2>
+    <p>Une information affichée peut être fausse pour deux raisons très différentes, et ce n'est pas la même personne qui peut la corriger. Pour savoir laquelle, voilà comment faire&nbsp;:</p>
+    <ol>
+      <li>Dans la fiche d'un point de la carte, ou dans celle d'un résultat d'urgence, cliquez sur {{q:card.problem}}.</li>
+      <li>Un écran s'ouvre par-dessus, intitulé {{q:problem.title}}.</li>
+      <li>Vérifiez&nbsp;:
+        <ul>
+          <li><strong>L'erreur est déjà dans les données non interprétées de cet écran</strong> (défibrillateur déplacé ou retiré, horaires faux, électrodes périmées, adresse erronée…)&nbsp;: elle est fausse à la source, et seul l'exploitant peut la corriger, en mettant à jour sa déclaration sur le portail officiel <a href="https://geodae.atlasante.fr/apropos" rel="noopener">Géo'DAE</a>. Une fois l'erreur corrigée par l'exploitant, la correction devrait apparaître ici lors d'une prochaine mise à jour des données.</li>
+          <li><strong>Les données sont justes, mais le site en fait une mauvaise interprétation</strong> (défibrillateur classé {{q:access.unknown}} alors que les précisions (notes saisies par l'exploitant) indiquent des horaires, «&nbsp;ouvert&nbsp;» à tort, maintenance jugée périmée ou à jour à tort…)&nbsp;: l'erreur est de mon côté. Écrivez-moi avec «&nbsp;<a href="#mentions">Me contacter</a>&nbsp;» (en bas de cette page), en joignant le lien de la fiche (bouton {{q:share.button}}, puis {{q:share.copyLink}})&nbsp;: je pourrai retrouver le défibrillateur et corriger la lecture. Merci&nbsp;!</li>
+        </ul>
+      </li>
+    </ol>
+    <p>Le lien {{q:problem.learn}}, dans cet écran, mène directement ici (il s'ouvre dans un nouvel onglet).</p>
+    <p><strong>Ignorer n'est pas signaler.</strong> Le bouton {{q:problem.ignore}} ne prévient personne&nbsp;: il retire ce défibrillateur de vos suggestions d'urgence, sur cet appareil seulement, et il reste visible sur la carte.</p>
+    <p>Dans le menu {{q:nav.data}}, section {{q:ignored.title}}, vous pouvez le rétablir à tout moment ou prolonger la durée (1 semaine, 1 mois, ou {{q:ignored.d.change}}, dans la limite d'un an). C'est utile pour écarter durablement un défibrillateur que vous savez retiré ou inaccessible, ou pour préparer un déplacement. Si un défibrillateur ignoré aurait pu vous être proposé lors d'une recherche d'urgence, la liste de résultats le signale&nbsp;: {{q:results.hiddenIgnored.one}}</p>
+    <p>Pour qu'une erreur soit corrigée pour tout le monde, il faut passer par l'exploitant ou par moi, selon le cas décrit ci-dessus.</p>
+
+
+    <h2 id="dae">C'est quoi un défibrillateur&nbsp;?</h2>
+    <p>Un défibrillateur automatisé externe (DAE) est un appareil portable, conçu pour pouvoir être utilisé par n'importe qui, même sans formation. En cas d'arrêt cardiaque, on pose deux électrodes comme l'appareil l'indique&nbsp;: il analyse le rythme de son cœur, décide lui-même si un choc est utile, et guide à la voix, étape par étape. Il ne délivre un choc que si c'est nécessaire.</p>
+    <p>Certains défibrillateurs sont prévus pour les enfants (électrodes ou réglage spécifique), d'autres non&nbsp;: c'est pourquoi la recherche d'urgence vous demande si la personne est un adulte ou un enfant. D'après ce que j'ai compris, les fabricants réservent généralement les électrodes pour enfant aux jeunes enfants de moins de 8&nbsp;ans, ou de moins de 25&nbsp;kg. Les recommandations françaises du Conseil français de réanimation cardio-pulmonaire (<a href="https://www.cfrc.fr/reanimation-enfant" rel="noopener">page «&nbsp;Réanimation pédiatrique&nbsp;»</a>, qui s'appuie sur les recommandations européennes 2025) nuancent&nbsp;: chez un enfant de plus d'un an, un défibrillateur public peut être utilisé même sans matériel pour enfant, et des électrodes pour adulte sont acceptables à défaut. Dans tous les cas, appelez d'abord les secours, qui vous guident au téléphone.</p>
+    <p><em>Ces informations sont partagées à titre indicatif, selon ma compréhension&nbsp;: elles ne constituent pas un conseil médical.</em></p>
+
+    <h2 id="utiles">Liens utiles</h2>
+    <p>Ces liens sont proposés à titre d'information, sans partenariat ni contrepartie, et leur contenu relève de leurs éditeurs.</p>
+    <ul>
+      <li><a href="https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/numeros-utiles-nationaux" rel="noopener">Numéros d'urgence nationaux</a> (Ma Sécurité, ministère de l'Intérieur), dont le 114 par SMS pour les personnes sourdes, malentendantes ou dans l'impossibilité de parler.</li>
+      <li><a href="https://www.croix-rouge.fr/les-gestes-de-premiers-secours/arret-cardiaque" rel="noopener">Arrêt cardiaque&nbsp;: comment faire un massage cardiaque</a> (Croix-Rouge française).</li>
+      <li><a href="https://www.fedecardio.org/je-m-informe/appelez-le-15-massez-defibrillez/" rel="noopener">Appelez le 15, massez, défibrillez</a> (Fédération française de cardiologie).</li>
+      <li><a href="https://www.securite-civile.interieur.gouv.fr/sengager/engagement-citoyen/se-former-aux-gestes-qui-sauvent" rel="noopener">Se former aux gestes qui sauvent</a> (Sécurité civile, ministère de l'Intérieur).</li>
+      <li><a href="https://geodae.atlasante.fr/apropos" rel="noopener">Géo'DAE</a>, le portail officiel de la base nationale des défibrillateurs, pour déclarer ou corriger un défibrillateur (réservé aux exploitants).</li>
+    </ul>
+
+    <h2 id="lien">Faire un lien direct vers la carte</h2>
+    <p>Il est possible d'ouvrir la carte directement à un endroit précis en ajoutant un paramètre à la fin de l'adresse web du site&nbsp;:</p>
+    <ul>
+      <li><code>{{site}}{{file:index}}?cp=75002</code>&nbsp;: un code postal. Si plusieurs communes le partagent, la carte les montre toutes.</li>
+      <li><code>{{site}}{{file:index}}?code_insee=75102</code>&nbsp;: le code INSEE d'une commune, plus précis&nbsp;: il ne désigne qu'une seule commune. Pour Paris, Lyon et Marseille, ce sont les codes des arrondissements, ou celui de la ville entière.</li>
+    </ul>
+    <p>Si les deux sont donnés, seul le code INSEE est utilisé&nbsp;; le code postal ne sert que si le code INSEE est inconnu. Si aucun n'est reconnu, la carte s'ouvre normalement. Le centrage est approximatif (centre de la commune)&nbsp;: le lien ne garantit rien sur la présence de défibrillateurs à cet endroit.</p>
+    <p>Pour partager un défibrillateur précis, le plus simple est le bouton {{q:share.button}} de sa fiche. Il crée un lien du type <code>{{site}}{{file:index}}?gps_dae=43.59947,1.43335&amp;id_dae=12345</code>&nbsp;: <code>gps_dae</code> donne les coordonnées du défibrillateur (latitude, longitude) et <code>id_dae</code>, facultatif, précise lequel quand plusieurs défibrillateurs ont les mêmes coordonnées. La carte s'ouvre au niveau de la rue et ouvre sa fiche s'il est toujours connu. Ce paramètre l'emporte sur les deux autres. Les données évoluant, un défibrillateur peut avoir été déplacé ou supprimé depuis la création du lien.</p>
+
+{{partial:widget}}
+    <h2 id="credits">Crédits</h2>
+    <ul>
+      <li><strong>Défibrillateurs</strong>&nbsp;: base nationale Géo'DAE, données ouvertes sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte 2.0</a>.</li>
+      <li><strong>Fond de carte</strong>&nbsp;: © les contributeurs d'<a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>, sous licence ODbL. Bibliothèque de carte&nbsp;: <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>.</li>
+      <li><strong>Recherche d'adresse</strong>&nbsp;: Géoplateforme de l'IGN.</li>
+      <li><strong>Logo</strong>&nbsp;: adaptation personnelle du pictogramme ISO&nbsp;7010 E010 («&nbsp;défibrillateur automatisé externe&nbsp;»), publié en domaine public (CC0) sur Wikimedia Commons, dans lequel le cœur est remplacé par la France. Ce logo n'est pas une marque officielle (voir «&nbsp;Un site non officiel&nbsp;»).</li>
+      <li><strong>Communes et codes postaux</strong>&nbsp;: <a href="https://geo.api.gouv.fr/" rel="noopener">API Géo</a> (DINUM), à partir des données Adresses publiées sur adresse.data.gouv.fr, sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte</a>.</li>
+      <li><strong>Vacances scolaires</strong>&nbsp;: «&nbsp;Le calendrier scolaire&nbsp;», publié par le ministère de l'Éducation nationale sur <a href="https://data.education.gouv.fr/explore/dataset/fr-en-calendrier-scolaire/" rel="noopener">data.education.gouv.fr</a>, sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte 2.0</a>.</li>
+    </ul>
+
+    <h2 id="origine">L'idée d'origine</h2>
+    <p>Ce site a d'abord été conçu pour un <strong>usage privé</strong>&nbsp;: trouver rapidement un défibrillateur (DAE) autour de soi, en tenant compte de l'heure, de l'état probable du défibrillateur et du fait que la personne à secourir est un adulte ou un enfant.</p>
+    <p>Il a finalement été rendu public et ouvert à tous, et traduit au mieux dans différentes langues, en supposant qu'il pourrait rendre service.</p>
+    <p>Concrètement, ici&nbsp;: <strong>aucune publicité</strong>, aucun partenaire commercial, aucun sponsor, aucun placement de produit, <strong>aucun compte</strong> à créer, aucun abonnement ni service payant (un lien de don facultatif se trouve en bas de cette page), et <strong>aucune récupération de données de ma part</strong>&nbsp;: ni outil de mesure d'audience, ni base d'utilisateurs, ni formulaire.</p>
+
+    <h2 id="soutien">Soutenir ce site (facultatif)</h2>
+    <p>Ce site est gratuit, et je n'ai pas l'intention que cela change. Si vous souhaitez encourager cette initiative, vous pouvez contribuer librement. C'est <strong>entièrement facultatif et sans contrepartie</strong>&nbsp;: un don ne donne droit à aucun service ni traitement particulier, et n'est pas déductible des impôts.</p>
+{{partial:don}}
+
+    <h2 id="mentions">Mentions légales</h2>
+    <p><strong>Un site non officiel.</strong> Ce site est un projet personnel et indépendant, édité à titre non professionnel par un particulier dans le respect de la loi française (article&nbsp;6, III, 2 de la loi du 21&nbsp;juin 2004 pour la confiance dans l'économie numérique). Il n'est ni officiel, ni affilié à l'État, aux services de secours (SAMU, pompiers, etc.), aux autorités de santé ou à l'équipe de Géo'DAE, et il n'a reçu aucune approbation de leur part. Les symboles, noms et couleurs qui évoquent les défibrillateurs ou les secours sont utilisés à titre purement illustratif et n'impliquent aucun lien officiel.</p>
+    <p><strong>Hébergeur</strong>&nbsp;: GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis (<a href="https://github.com" rel="noopener">github.com</a>), +1&nbsp;877&nbsp;448&nbsp;4820.</p>
+    <p><strong>Contact</strong>&nbsp;: <a id="contact-link" href="#mentions">Me contacter</a> <noscript>(activez JavaScript pour afficher l'adresse e-mail)</noscript></p>
+
+    <p class="foot" id="dataset-info"></p>
+    </div>
+    {{partial:open-map-end}}
