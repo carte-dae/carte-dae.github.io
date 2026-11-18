@@ -1,6 +1,6 @@
 {
   "page": {
-    "intro.p1": "Mappa dei defibrillatori automatici esterni (DAE) in Francia, basata sulla banca dati nazionale ufficiale Géo'DAE. Filtri per accesso (24 ore su 24, orari limitati o sconosciuti), per manutenzione e per idoneità ai bambini, oppure avvii la ricerca di emergenza, che propone più defibrillatori in base all'orario, al probabile stato del defibrillatore e all'età della persona da soccorrere.",
+    "intro.p1": "Mappa dei defibrillatori automatici esterni (DAE) in Francia, basata sulla banca dati nazionale ufficiale Géo'DAE. Filtri per accesso (24 ore su 24, orari limitati o sconosciuti), per manutenzione e per idoneità ai bambini, oppure avvii la ricerca di emergenza, che propone più defibrillatori in base all'orario, al probabile stato del defibrillatore e alla persona da soccorrere (adulto o bambino).",
     "intro.p2": "In caso di emergenza vitale, chiami prima di tutto il 112 o il 15 (SMS: 114). <a href=\"{{page:guide}}\">Guida: questo sito, i suoi dati e i suoi limiti</a>.",
     "sim.banner": "<strong>SIMULAZIONE</strong>: <span id=\"sim-when\"></span>. Non è la realtà.",
     "sim.position": "La ricerca parte da dove si trova (la sua posizione GPS), oppure dall'indirizzo o dal punto che indica con «Cambia la mia posizione».",
@@ -25,7 +25,7 @@
     "site.name": "Trovare un defibrillatore",
     "og.tagline": "Mappa dei DAE in Francia",
     "index.title": "Mappa dei defibrillatori DAE in Francia: trovare il più vicino",
-    "index.description": "Trovi rapidamente un defibrillatore (DAE) vicino a lei in Francia: mappa con filtri e ricerca di emergenza adattata all'orario, allo stato del defibrillatore e all'età della persona da soccorrere.",
+    "index.description": "Trovi rapidamente un defibrillatore (DAE) vicino a lei in Francia: mappa con filtri e ricerca di emergenza adattata all'orario, allo stato del defibrillatore e alla persona da soccorrere (adulto o bambino).",
     "index.noscript": "Questa mappa richiede JavaScript. In caso di emergenza vitale, chiami il <a href=\"tel:112\">112</a> o il <a href=\"tel:15\">15</a> (SMS: <a href=\"sms:114\">114</a>).",
     "index.jsonldOs": "Qualsiasi browser web",
     "index.jsonldAudience": "Chiunque cerchi un defibrillatore in Francia",

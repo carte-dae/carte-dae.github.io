@@ -1,6 +1,6 @@
 {
   "page": {
-    "intro.p1": "Carte des défibrillateurs automatisés externes (DAE) en France, d'après la base nationale officielle Géo'DAE. Filtrez par accès (24h/24, horaires limités ou inconnus), par maintenance et par adaptation aux enfants, ou lancez la recherche d'urgence qui propose plusieurs défibrillateurs selon l'heure, l'état probable du défibrillateur et l'âge de la personne à secourir.",
+    "intro.p1": "Carte des défibrillateurs automatisés externes (DAE) en France, d'après la base nationale officielle Géo'DAE. Filtrez par accès (24h/24, horaires limités ou inconnus), par maintenance et par adaptation aux enfants, ou lancez la recherche d'urgence qui propose plusieurs défibrillateurs selon l'heure, l'état probable du défibrillateur et la personne à secourir (adulte ou enfant).",
     "intro.p2": "En cas d'urgence vitale, appelez d'abord le 15 ou le 112 (SMS\u00a0: 114). <a href=\"{{page:guide}}\">Guide\u00a0: ce site, ses données et ses limites</a>.",
     "sim.banner": "<strong>SIMULATION</strong>\u00a0: <span id=\"sim-when\"></span>. Ce n'est pas la réalité.",
     "sim.position": "La recherche part de l'endroit où vous êtes (votre position GPS), ou de l'adresse ou du point que vous indiquez avec « Changer ma position ».",
@@ -25,7 +25,7 @@
     "site.name": "Trouver un défibrillateur",
     "og.tagline": "Carte des DAE en France",
     "index.title": "Carte des défibrillateurs DAE en France\u00a0: trouver le plus proche",
-    "index.description": "Trouvez rapidement un défibrillateur (DAE) autour de vous en France : carte avec filtres, et recherche d'urgence adaptée à l'heure, à l'état du défibrillateur et à l'âge de la personne à secourir.",
+    "index.description": "Trouvez rapidement un défibrillateur (DAE) autour de vous en France : carte avec filtres, et recherche d'urgence adaptée à l'heure, à l'état du défibrillateur et à la personne à secourir (adulte ou enfant).",
     "index.noscript": "Cette carte a besoin de JavaScript. En cas d'urgence vitale, appelez le <a href=\"tel:15\">15</a> ou le <a href=\"tel:112\">112</a> (SMS\u00a0: <a href=\"sms:114\">114</a>).",
     "index.jsonldOs": "Tout navigateur web",
     "index.jsonldAudience": "Toute personne cherchant un défibrillateur en France",

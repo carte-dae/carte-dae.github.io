@@ -1,6 +1,6 @@
 {
   "page": {
-    "intro.p1": "Karte der automatisierten externen Defibrillatoren (AED) in Frankreich, auf Grundlage der offiziellen nationalen Datenbank Géo'DAE. Filtern Sie nach Zugang (rund um die Uhr, eingeschränkte oder unbekannte Öffnungszeiten), nach Wartung und nach Eignung für Kinder, oder starten Sie die Notfallsuche, die je nach Uhrzeit, wahrscheinlichem Zustand des Defibrillators und Alter der zu versorgenden Person mehrere Defibrillatoren vorschlägt.",
+    "intro.p1": "Karte der automatisierten externen Defibrillatoren (AED) in Frankreich, auf Grundlage der offiziellen nationalen Datenbank Géo'DAE. Filtern Sie nach Zugang (rund um die Uhr, eingeschränkte oder unbekannte Öffnungszeiten), nach Wartung und nach Eignung für Kinder, oder starten Sie die Notfallsuche, die je nach Uhrzeit, wahrscheinlichem Zustand des Defibrillators und der zu versorgenden Person (Erwachsener oder Kind) mehrere Defibrillatoren vorschlägt.",
     "intro.p2": "Rufen Sie in einem lebensbedrohlichen Notfall zuerst die 112 oder die 15 an (SMS: 114). <a href=\"{{page:guide}}\">Leitfaden: diese Website, ihre Daten und ihre Grenzen</a>.",
     "sim.banner": "<strong>SIMULATION</strong>: <span id=\"sim-when\"></span>. Das ist nicht die Realität.",
     "sim.position": "Die Suche geht von Ihrem Standort aus (Ihrer GPS-Position) oder von der Adresse bzw. dem Punkt, den Sie mit „Meinen Standort ändern“ angeben.",
@@ -25,7 +25,7 @@
     "site.name": "Defibrillator finden",
     "og.tagline": "AED-Karte für Frankreich",
     "index.title": "Karte der Defibrillatoren (AED) in Frankreich: den nächsten finden",
-    "index.description": "Finden Sie schnell einen Defibrillator (AED) in Ihrer Nähe in Frankreich: Karte mit Filtern und eine Notfallsuche, die Uhrzeit, Zustand des Defibrillators und Alter der zu versorgenden Person berücksichtigt.",
+    "index.description": "Finden Sie schnell einen Defibrillator (AED) in Ihrer Nähe in Frankreich: Karte mit Filtern und eine Notfallsuche, die Uhrzeit, Zustand des Defibrillators und die zu versorgende Person (Erwachsener oder Kind) berücksichtigt.",
     "index.noscript": "Diese Karte benötigt JavaScript. Rufen Sie in einem lebensbedrohlichen Notfall die <a href=\"tel:112\">112</a> oder die <a href=\"tel:15\">15</a> an (SMS: <a href=\"sms:114\">114</a>).",
     "index.jsonldOs": "Jeder Webbrowser",
     "index.jsonldAudience": "Alle, die in Frankreich einen Defibrillator suchen",

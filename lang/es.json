@@ -1,6 +1,6 @@
 {
   "page": {
-    "intro.p1": "Mapa de los desfibriladores externos automáticos (DEA) en Francia, según la base de datos nacional oficial Géo'DAE. Filtre por acceso (las 24 horas, horario limitado o desconocido), por mantenimiento y por idoneidad para niños, o inicie la búsqueda de emergencia, que propone varios desfibriladores según la hora, el estado probable del desfibrilador y la edad de la persona a la que hay que socorrer.",
+    "intro.p1": "Mapa de los desfibriladores externos automáticos (DEA) en Francia, según la base de datos nacional oficial Géo'DAE. Filtre por acceso (las 24 horas, horario limitado o desconocido), por mantenimiento y por idoneidad para niños, o inicie la búsqueda de emergencia, que propone varios desfibriladores según la hora, el estado probable del desfibrilador y la persona a la que hay que socorrer (adulto o niño).",
     "intro.p2": "En una emergencia vital, llame primero al 112 o al 15 (SMS: 114). <a href=\"{{page:guide}}\">Guía: este sitio, sus datos y sus límites</a>.",
     "sim.banner": "<strong>SIMULACIÓN</strong>: <span id=\"sim-when\"></span>. No es la realidad.",
     "sim.position": "La búsqueda parte del lugar donde está (su posición GPS), o de la dirección o el punto que indique con «Cambiar mi ubicación».",
@@ -25,7 +25,7 @@
     "site.name": "Encontrar un desfibrilador",
     "og.tagline": "Mapa de DEA en Francia",
     "index.title": "Mapa de desfibriladores DEA en Francia: encontrar el más cercano",
-    "index.description": "Encuentre rápidamente un desfibrilador (DEA) cerca de usted en Francia: mapa con filtros y búsqueda de emergencia adaptada a la hora, al estado del desfibrilador y a la edad de la persona a la que hay que socorrer.",
+    "index.description": "Encuentre rápidamente un desfibrilador (DEA) cerca de usted en Francia: mapa con filtros y búsqueda de emergencia adaptada a la hora, al estado del desfibrilador y a la persona a la que hay que socorrer (adulto o niño).",
     "index.noscript": "Este mapa necesita JavaScript. En una emergencia vital, llame al <a href=\"tel:112\">112</a> o al <a href=\"tel:15\">15</a> (SMS: <a href=\"sms:114\">114</a>).",
     "index.jsonldOs": "Cualquier navegador web",
     "index.jsonldAudience": "Cualquier persona que busque un desfibrilador en Francia",

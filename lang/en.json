@@ -1,6 +1,6 @@
 {
   "page": {
-    "intro.p1": "Map of automated external defibrillators (AEDs) in France, based on the official national Géo'DAE database. Filter by access (24/7, limited or unknown hours), by maintenance and by suitability for children, or start the emergency search, which suggests several defibrillators according to the time, the probable condition of the defibrillator and the age of the person to be helped.",
+    "intro.p1": "Map of automated external defibrillators (AEDs) in France, based on the official national Géo'DAE database. Filter by access (24/7, limited or unknown hours), by maintenance and by suitability for children, or start the emergency search, which suggests several defibrillators according to the time, the probable condition of the defibrillator and the person to be helped (adult or child).",
     "intro.p2": "In a life-threatening emergency, first call 112 or 15 (SMS: 114). <a href=\"{{page:guide}}\">Guide: this site, its data and its limits</a>.",
     "sim.banner": "<strong>SIMULATION</strong>: <span id=\"sim-when\"></span>. This is not reality.",
     "sim.position": "The search starts from where you are (your GPS position), or from the address or point you give with “Change my location”.",
@@ -25,7 +25,7 @@
     "site.name": "Find a defibrillator",
     "og.tagline": "AED map of France",
     "index.title": "Defibrillator (AED) map of France: find the nearest",
-    "index.description": "Quickly find a defibrillator (AED) near you in France: map with filters, and an emergency search adapted to the time, the condition of the defibrillator and the age of the person to be helped.",
+    "index.description": "Quickly find a defibrillator (AED) near you in France: map with filters, and an emergency search adapted to the time, the condition of the defibrillator and the person to be helped (adult or child).",
     "index.noscript": "This map needs JavaScript. In a life-threatening emergency, call <a href=\"tel:112\">112</a> or <a href=\"tel:15\">15</a> (SMS: <a href=\"sms:114\">114</a>).",
     "index.jsonldOs": "Any web browser",
     "index.jsonldAudience": "Anyone looking for a defibrillator in France",

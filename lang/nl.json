@@ -1,6 +1,6 @@
 {
   "page": {
-    "intro.p1": "Kaart van de automatische externe defibrillatoren (AED's) in Frankrijk, op basis van de officiële nationale database Géo'DAE. Filter op toegang (24 uur per dag, beperkte of onbekende openingstijden), op onderhoud en op geschiktheid voor kinderen, of start de noodzoekopdracht, die meerdere defibrillatoren voorstelt op basis van het tijdstip, de waarschijnlijke staat van de defibrillator en de leeftijd van de persoon die geholpen moet worden.",
+    "intro.p1": "Kaart van de automatische externe defibrillatoren (AED's) in Frankrijk, op basis van de officiële nationale database Géo'DAE. Filter op toegang (24 uur per dag, beperkte of onbekende openingstijden), op onderhoud en op geschiktheid voor kinderen, of start de noodzoekopdracht, die meerdere defibrillatoren voorstelt op basis van het tijdstip, de waarschijnlijke staat van de defibrillator en de persoon die geholpen moet worden (volwassene of kind).",
     "intro.p2": "Bel bij een levensbedreigende noodsituatie eerst 112 of 15 (sms: 114). <a href=\"{{page:guide}}\">Gids: deze site, de gegevens en de beperkingen ervan</a>.",
     "sim.banner": "<strong>SIMULATIE</strong>: <span id=\"sim-when\"></span>. Dit is niet de werkelijkheid.",
     "sim.position": "De zoekopdracht start vanaf waar u bent (uw GPS-positie), of vanaf het adres of punt dat u opgeeft met “Mijn locatie wijzigen”.",
@@ -25,7 +25,7 @@
     "site.name": "Een defibrillator vinden",
     "og.tagline": "AED-kaart van Frankrijk",
     "index.title": "Kaart van defibrillatoren (AED) in Frankrijk: de dichtstbijzijnde vinden",
-    "index.description": "Vind snel een defibrillator (AED) bij u in de buurt in Frankrijk: kaart met filters en een noodzoekopdracht die rekening houdt met het tijdstip, de staat van de defibrillator en de leeftijd van de persoon die geholpen moet worden.",
+    "index.description": "Vind snel een defibrillator (AED) bij u in de buurt in Frankrijk: kaart met filters en een noodzoekopdracht die rekening houdt met het tijdstip, de staat van de defibrillator en de persoon die geholpen moet worden (volwassene of kind).",
     "index.noscript": "Deze kaart heeft JavaScript nodig. Bel bij een levensbedreigende noodsituatie <a href=\"tel:112\">112</a> of <a href=\"tel:15\">15</a> (sms: <a href=\"sms:114\">114</a>).",
     "index.jsonldOs": "Elke webbrowser",
     "index.jsonldAudience": "Iedereen die in Frankrijk een defibrillator zoekt",
