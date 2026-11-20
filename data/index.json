@@ -1,0 +1,23 @@
+{
+ "datasets": [
+  {
+   "date": "2026-11-20-11",
+   "count": 186327,
+   "bytes": 37535272,
+   "sourceSha1": "73c753ed18bd69d22286048a4811bf4d87eccfc9"
+  },
+  {
+   "date": "2026-11-20-08",
+   "count": 186327,
+   "bytes": 37535086,
+   "sourceSha1": "34857fe5ae9cd7e5cb46570c41f79c7be16b06b8"
+  },
+  {
+   "date": "2026-11-20-05",
+   "count": 186326,
+   "bytes": 37534814,
+   "sourceSha1": "4a723cf74cef1f24eece8404832a44650d6890f0"
+  }
+ ],
+ "latest": "2026-11-20-11"
+}

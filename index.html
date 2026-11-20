@@ -1,0 +1,131 @@
+<!doctype html>
+<!-- Page générée par scripts/build_site.py (modèle templates/index.html, langue : fr). Ne pas la modifier à la main. -->
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="msvalidate.01" content="6D032F1D3485C6287F92C752843D09EE">
+  <meta name="google-site-verification" content="j_24BDEGVz9nLmb6N3R84CMHEOv76hVXDExAhQhjbrE">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Carte des défibrillateurs DAE en France&nbsp;: trouver le plus proche</title>
+  <meta name="description" content="Trouvez rapidement un défibrillateur (DAE) autour de vous en France&nbsp;: carte avec filtres, et recherche d'urgence adaptée à l'heure, à l'état du défibrillateur et à la personne à secourir (adulte ou enfant).">
+  <link rel="canonical" href="https://carte-dae.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://carte-dae.github.io/">
+  <link rel="alternate" hreflang="de" href="https://carte-dae.github.io/index.de.html">
+  <link rel="alternate" hreflang="en" href="https://carte-dae.github.io/index.en.html">
+  <link rel="alternate" hreflang="es" href="https://carte-dae.github.io/index.es.html">
+  <link rel="alternate" hreflang="it" href="https://carte-dae.github.io/index.it.html">
+  <link rel="alternate" hreflang="nl" href="https://carte-dae.github.io/index.nl.html">
+  <link rel="alternate" hreflang="pt-PT" href="https://carte-dae.github.io/index.pt.html">
+  <link rel="alternate" hreflang="x-default" href="https://carte-dae.github.io/">
+  <meta name="theme-color" content="#237F52">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon.ico" sizes="48x48">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="icons/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#237F52">
+  <link rel="manifest" href="icons/manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://carte-dae.github.io/">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta property="og:site_name" content="Trouver un défibrillateur">
+  <meta property="og:title" content="Carte des défibrillateurs DAE en France&nbsp;: trouver le plus proche">
+  <meta property="og:description" content="Trouvez rapidement un défibrillateur (DAE) autour de vous en France&nbsp;: carte avec filtres, et recherche d'urgence adaptée à l'heure, à l'état du défibrillateur et à la personne à secourir (adulte ou enfant).">
+  <meta property="og:image" content="https://carte-dae.github.io/icons/og-fr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Trouver un défibrillateur - Carte des DAE en France">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://carte-dae.github.io/icons/og-fr.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://carte-dae.github.io/#site","url":"https://carte-dae.github.io/","name":"Trouver un défibrillateur","inLanguage":"fr"},{"@type":"WebApplication","@id":"https://carte-dae.github.io/#app","url":"https://carte-dae.github.io/","name":"Trouver un défibrillateur","description":"Trouvez rapidement un défibrillateur (DAE) autour de vous en France : carte avec filtres, et recherche d'urgence adaptée à l'heure, à l'état du défibrillateur et à la personne à secourir (adulte ou enfant).","inLanguage":"fr","applicationCategory":"HealthApplication","operatingSystem":"Tout navigateur web","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"areaServed":"FR","audience":{"@type":"Audience","audienceType":"Toute personne cherchant un défibrillateur en France"},"isPartOf":{"@id":"https://carte-dae.github.io/#site"}}]}
+  </script>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=ec929f11">
+  <link rel="stylesheet" href="css/style.css?v=71fe6ae5">
+</head>
+<body>
+  <section id="intro" class="sr-only">
+    <h1>Carte des défibrillateurs DAE en France&nbsp;: trouver le plus proche</h1>
+    <p>Carte des défibrillateurs automatisés externes (DAE) en France, d'après la base nationale officielle Géo'DAE. Filtrez par accès (24h/24, horaires limités ou inconnus), par maintenance et par adaptation aux enfants, ou lancez la recherche d'urgence qui propose plusieurs défibrillateurs selon l'heure, l'état probable du défibrillateur et la personne à secourir (adulte ou enfant).</p>
+    <p>En cas d'urgence vitale, appelez d'abord le 15 ou le 112 (SMS&nbsp;: 114). <a href="guide.html">Guide&nbsp;: ce site, ses données et ses limites</a>.</p>
+  </section>
+  <noscript><p style="margin:0;padding:12px;background:#fff3cd;color:#1d1d1f;font:16px/1.4 system-ui">Cette carte a besoin de JavaScript. En cas d'urgence vitale, appelez le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> (SMS&nbsp;: <a href="sms:114">114</a>).</p></noscript>
+  <div id="sim-banner" hidden role="alert">
+    <p><strong>SIMULATION</strong>&nbsp;: <span id="sim-when"></span>. Ce n'est pas la réalité.</p>
+    <p class="sim-pos">La recherche part de l'endroit où vous êtes (votre position GPS), ou de l'adresse ou du point que vous indiquez avec « Changer ma position ».</p>
+    <button id="sim-exit" type="button">Revenir au mode normal</button>
+  </div>
+  <div id="urgence">Urgence&nbsp;: appelez d'abord le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> (SMS&nbsp;: <a href="sms:114">114</a>).</div>
+  <div id="quick">
+    <div class="quick-box">
+      <p class="quick-title">Trouver un défibrillateur maintenant (<time id="clock">--h--</time>)</p>
+      <div class="quick-row">
+        <button id="quick-adult" type="button">Pour un adulte</button>
+        <button id="quick-child" type="button">Pour un enfant</button>
+      </div>
+    </div>
+    <div id="posline"></div>
+  </div>
+  <div id="map-wrap">
+    <div id="map" role="region" aria-label="Carte des défibrillateurs"></div>
+    <div id="status" role="status"></div>
+    <div id="map-ui">
+    <div id="bottom-left">
+      <button id="filters-toggle" type="button" aria-controls="filters" aria-expanded="false">Filtres</button>
+      <button id="data-toggle" type="button">Données</button>
+      <a id="guide-toggle" href="guide.html"><img src="icons/favicon.svg" alt="" width="20" height="20"><span>Guide</span></a>
+    </div>
+    <div id="filters" role="group" aria-label="Légende et filtres">
+      <div class="filters-head"><b>Légende et filtres</b><button id="filters-close" type="button" class="sheet-close">Fermer</button></div>
+      <fieldset>
+        <legend>Accès (couleur du point)</legend>
+        <label><input type="checkbox" autocomplete="off" data-group="access" value="h24"><i class="dot" style="background:#1b873f"></i> <span>Accessible 24h/24 et 7j/7</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="access" value="limited"><i class="dot" style="background:#e07b00"></i> <span>Horaires limités</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="access" value="unknown"><i class="dot" style="background:#1a6fd1"></i> <span>Horaires inconnus</span></label>
+      </fieldset>
+      <fieldset>
+        <legend>Maintenance (anneau autour du point)</legend>
+        <label><input type="checkbox" autocomplete="off" data-group="maint" value="ok"><svg class="ring-svg" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#1b873f" stroke-width="4.5"/></svg> <span>À jour</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="maint" value="unknown"><svg class="ring-svg" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#8a8a8a" stroke-width="4.5" stroke-dasharray="21.83 5.4"/></svg> <span>Non confirmée</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="maint" value="doubt"><svg class="ring-svg" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#d0021b" stroke-width="4.5" stroke-dasharray="5.5 4.71"/></svg> <span>Ancienne ou périmée</span></label>
+      </fieldset>
+      <fieldset>
+        <legend>Enfants et bébés</legend>
+        <label><input type="checkbox" autocomplete="off" id="f-ped"><i class="marker-legend"><svg viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="M12 4.6a8.6 8.6 0 1 0 0 17.2 8.6 8.6 0 0 0 0-17.2zM8.6 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM15.4 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM8.3 15.9Q12 20.1 15.7 15.9Q12 18 8.3 15.9z"/><circle cx="4.1" cy="14" r="1.9" fill="#fff"/><circle cx="19.9" cy="14" r="1.9" fill="#fff"/><path d="M12 5.2c-.2-2.2 2.6-3.4 4-1.8 1 1.2-.1 2.6-1.4 2.2" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round"/></svg></i> <span>N'afficher que les pédiatriques</span></label>
+        <label class="sub"><input type="checkbox" autocomplete="off" id="f-ped-unknown"><i class="marker-legend unknown"></i> <span>Montrer aussi les incertains</span></label>
+      </fieldset>
+    </div>
+    </div>
+    <div id="results" aria-live="polite"></div>
+  </div>
+  <div id="lang-control">
+    <button id="lang-button" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Changer de langue" title="Changer de langue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span class="code">FR</span></button>
+    <ul id="lang-menu" hidden>
+      <li><a href="./" lang="fr" hreflang="fr" aria-current="true">Français</a></li>
+      <li><a href="index.de.html" lang="de" hreflang="de">Deutsch</a></li>
+      <li><a href="index.en.html" lang="en" hreflang="en">English</a></li>
+      <li><a href="index.es.html" lang="es" hreflang="es">Español</a></li>
+      <li><a href="index.it.html" lang="it" hreflang="it">Italiano</a></li>
+      <li><a href="index.nl.html" lang="nl" hreflang="nl">Nederlands</a></li>
+      <li><a href="index.pt.html" lang="pt" hreflang="pt">Português</a></li>
+    </ul>
+  </div>
+  <button id="locate" type="button" aria-label="Centrer la carte sur ma position" title="Centrer la carte sur ma position" data-tip="Centrer sur ma position"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M12 1.5v4M12 18.5v4M1.5 12h4M18.5 12h4"/></svg></button>
+  <script src="vendor/leaflet/leaflet.js?v=5a640ff8"></script>
+  <div id="data-panel" role="dialog" aria-modal="true" aria-label="Données" hidden></div>
+  <script src="js/i18n.js?v=ecf5a4b3"></script>
+  <script src="js/lang/fr.js?v=013b1d51"></script>
+  <script src="js/format.js?v=97edacb4"></script>
+  <script src="js/dae-view.js?v=6d6312c8"></script>
+  <script src="js/data.js?v=6272879e"></script>
+  <script src="js/places.js?v=9f8ab787"></script>
+  <script src="js/app.js?v=a48b50e0"></script>
+  <script src="js/quick.js?v=f16faa72"></script>
+</body>
+</html>
