@@ -202,7 +202,7 @@ STRINGS.de = {
   "data.used": "Datensatz vom {date} wird verwendet.",
   "data.backToLatestDone": "Zurück zu den neuesten Daten.",
   "data.updateBanner": "Aktualisierung verfügbar: Datensatz vom {date}{size}. Ihre aktuellen Datensätze bleiben erhalten.",
-  "data.downloadBanner": "Laden Sie einen Datensatz herunter, um die App ohne Verbindung zu nutzen.",
+  "data.downloadBanner": "Laden Sie einen Datensatz herunter, um ihn auf diesem Gerät zu behalten und darauf zurückkehren zu können, falls eine Aktualisierung einen Fehler enthält.",
   "data.manual": "Sie verwenden einen von Hand gewählten Datensatz. {button}",
   "data.backToLatest": "Zurück zu den neuesten Daten",
   "data.latestInUse": "Sie verwenden den neuesten auf dieser Website verfügbaren Datensatz.",

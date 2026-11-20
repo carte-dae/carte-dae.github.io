@@ -202,7 +202,7 @@ STRINGS.nl = {
   "data.used": "Dataset van {date} in gebruik.",
   "data.backToLatestDone": "Terug naar de nieuwste gegevens.",
   "data.updateBanner": "Update beschikbaar: dataset van {date}{size}. Uw huidige datasets blijven bewaard.",
-  "data.downloadBanner": "Download een dataset om de app zonder verbinding te gebruiken.",
+  "data.downloadBanner": "Download een dataset om die op dit apparaat te bewaren en er naar terug te kunnen keren als een update een fout bevat.",
   "data.manual": "U gebruikt een met de hand gekozen dataset. {button}",
   "data.backToLatest": "Terug naar de nieuwste gegevens",
   "data.latestInUse": "U gebruikt de nieuwste dataset die op deze site beschikbaar is.",

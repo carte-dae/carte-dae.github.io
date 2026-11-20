@@ -202,7 +202,7 @@ STRINGS.fr = {
   "data.used": "Jeu de données du {date} utilisé.",
   "data.backToLatestDone": "Retour aux dernières données.",
   "data.updateBanner": "Mise à jour disponible\u00a0: jeu de données du {date}{size}. Vos jeux de données actuels sont conservés.",
-  "data.downloadBanner": "Téléchargez un jeu de données pour utiliser l'application sans connexion.",
+  "data.downloadBanner": "Téléchargez un jeu de données pour le garder sur cet appareil et pouvoir y revenir si une mise à jour contient une erreur.",
   "data.manual": "Vous utilisez un jeu de données choisi à la main. {button}",
   "data.backToLatest": "Revenir aux dernières données",
   "data.latestInUse": "Vous utilisez le dernier jeu de données disponible sur ce site.",

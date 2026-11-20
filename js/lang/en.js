@@ -202,7 +202,7 @@ STRINGS.en = {
   "data.used": "Dataset of {date} in use.",
   "data.backToLatestDone": "Back to the latest data.",
   "data.updateBanner": "Update available: dataset of {date}{size}. Your current datasets are kept.",
-  "data.downloadBanner": "Download a dataset to use the app without a connection.",
+  "data.downloadBanner": "Download a dataset to keep it on this device and be able to go back to it if an update contains an error.",
   "data.manual": "You are using a dataset chosen by hand. {button}",
   "data.backToLatest": "Back to the latest data",
   "data.latestInUse": "You are using the latest dataset available on this site.",

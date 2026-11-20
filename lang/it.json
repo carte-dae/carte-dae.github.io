@@ -287,7 +287,7 @@
     "data.used": "Set di dati del {date} in uso.",
     "data.backToLatestDone": "Tornati agli ultimi dati.",
     "data.updateBanner": "Aggiornamento disponibile: set di dati del {date}{size}. I suoi set di dati attuali vengono conservati.",
-    "data.downloadBanner": "Scarichi un set di dati per usare l'app senza connessione.",
+    "data.downloadBanner": "Scarichi un set di dati per conservarlo su questo dispositivo e poter tornare ad esso se un aggiornamento contiene un errore.",
     "data.manual": "Sta usando un set di dati scelto a mano. {button}",
     "data.backToLatest": "Torna agli ultimi dati",
     "data.latestInUse": "Sta usando l'ultimo set di dati disponibile su questo sito.",
