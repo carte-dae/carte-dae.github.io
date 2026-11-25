@@ -14,13 +14,13 @@ li { margin: 6px 0; }
 .back { margin: 8px 0; }
 .foot { color: var(--muted); font-size: .9rem; margin-top: 28px; }
 
-.don { display: inline-flex; align-items: center; gap: 10px; padding: 11px 20px; border-radius: 999px; background: #0074d4; color: #fff; font-weight: 600; text-decoration: none; box-shadow: 0 2px 6px rgba(0, 0, 0, .25); transition: background .15s ease; }
-.don:hover, .don:focus-visible { background: #005fb0; }
-.don:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
-.don .cup { width: 28px; height: 28px; flex: none; }
-.don .steam path { animation: steam 2.6s ease-in-out infinite; transform-box: fill-box; }
-.don .steam path:nth-child(2) { animation-delay: .5s; }
-.don .steam path:nth-child(3) { animation-delay: 1s; }
+.tip { display: inline-flex; align-items: center; gap: 10px; padding: 11px 20px; border-radius: 999px; background: #0074d4; color: #fff; font-weight: 600; text-decoration: none; box-shadow: 0 2px 6px rgba(0, 0, 0, .25); transition: background .15s ease; }
+.tip:hover, .tip:focus-visible { background: #005fb0; }
+.tip:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+.tip .cup { width: 28px; height: 28px; flex: none; }
+.tip .steam path { animation: steam 2.6s ease-in-out infinite; transform-box: fill-box; }
+.tip .steam path:nth-child(2) { animation-delay: .5s; }
+.tip .steam path:nth-child(3) { animation-delay: 1s; }
 /* Logo animé de la page Guide (templates/partials/logo-anime.html, généré par sources/generer_icones.py --logo-anime).
    Un cycle de 6,5 s : deux ondes (on trouve le défibrillateur), un contour vert qui monte autour de l'éclair (charge), trois clignotements
    (bip… bip… bip…), puis le choc : l'éclair jaune dans un cœur et des rayons orange, une fraction de seconde ; le reste du cycle est une pause.
@@ -80,7 +80,7 @@ li { margin: 6px 0; }
 .sim-custom label { display: flex; flex-direction: column; gap: 4px; }
 .sim-error { margin: 10px 0 0; color: var(--alert-border); }
 @keyframes steam { 0% { opacity: 0; transform: translateY(3px); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(-4px); } }
-@media (prefers-reduced-motion: reduce) { .don .steam path { animation: none; opacity: 1; } .don { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .tip .steam path { animation: none; opacity: 1; } .tip { transition: none; } }
 .toc { margin: 16px 0 0; padding: 10px 14px; border: 1px solid var(--muted); border-radius: 8px; }
 .toc ul { margin: 0; padding-left: 1.2rem; }
 .toc li { margin: 2px 0; }
