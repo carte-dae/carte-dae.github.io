@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- Page générée par scripts/build_site.py (modèle templates/index.html, langue : it). Ne pas la modifier à la main. -->
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mappa dei defibrillatori DAE in Francia: trovare il più vicino</title>
+  <meta name="description" content="Trovi rapidamente un defibrillatore (DAE) vicino a lei in Francia: mappa con filtri e ricerca di emergenza adattata all'orario, allo stato del defibrillatore e alla persona da soccorrere (adulto o bambino).">
+  <link rel="canonical" href="https://carte-dae.github.io/index.it.html">
+  <link rel="alternate" hreflang="fr" href="https://carte-dae.github.io/">
+  <link rel="alternate" hreflang="de" href="https://carte-dae.github.io/index.de.html">
+  <link rel="alternate" hreflang="en" href="https://carte-dae.github.io/index.en.html">
+  <link rel="alternate" hreflang="es" href="https://carte-dae.github.io/index.es.html">
+  <link rel="alternate" hreflang="it" href="https://carte-dae.github.io/index.it.html">
+  <link rel="alternate" hreflang="nl" href="https://carte-dae.github.io/index.nl.html">
+  <link rel="alternate" hreflang="pt-PT" href="https://carte-dae.github.io/index.pt.html">
+  <link rel="alternate" hreflang="x-default" href="https://carte-dae.github.io/">
+  <meta name="theme-color" content="#237F52">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon.ico" sizes="48x48">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="icons/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#237F52">
+  <link rel="manifest" href="icons/manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://carte-dae.github.io/index.it.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta property="og:site_name" content="Trovare un defibrillatore">
+  <meta property="og:title" content="Mappa dei defibrillatori DAE in Francia: trovare il più vicino">
+  <meta property="og:description" content="Trovi rapidamente un defibrillatore (DAE) vicino a lei in Francia: mappa con filtri e ricerca di emergenza adattata all'orario, allo stato del defibrillatore e alla persona da soccorrere (adulto o bambino).">
+  <meta property="og:image" content="https://carte-dae.github.io/icons/og-it.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Trovare un defibrillatore - Mappa dei DAE in Francia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://carte-dae.github.io/icons/og-it.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://carte-dae.github.io/index.it.html#site","url":"https://carte-dae.github.io/index.it.html","name":"Trovare un defibrillatore","inLanguage":"it"},{"@type":"WebApplication","@id":"https://carte-dae.github.io/index.it.html#app","url":"https://carte-dae.github.io/index.it.html","name":"Trovare un defibrillatore","description":"Trovi rapidamente un defibrillatore (DAE) vicino a lei in Francia: mappa con filtri e ricerca di emergenza adattata all'orario, allo stato del defibrillatore e alla persona da soccorrere (adulto o bambino).","inLanguage":"it","applicationCategory":"HealthApplication","operatingSystem":"Qualsiasi browser web","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"areaServed":"FR","audience":{"@type":"Audience","audienceType":"Chiunque cerchi un defibrillatore in Francia"},"isPartOf":{"@id":"https://carte-dae.github.io/index.it.html#site"}}]}
+  </script>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=ec929f11">
+  <link rel="stylesheet" href="css/style.css?v=71fe6ae5">
+</head>
+<body>
+  <section id="intro" class="sr-only">
+    <h1>Mappa dei defibrillatori DAE in Francia: trovare il più vicino</h1>
+    <p>Mappa dei defibrillatori automatici esterni (DAE) in Francia, basata sulla banca dati nazionale ufficiale Géo'DAE. Filtri per accesso (24 ore su 24, orari limitati o sconosciuti), per manutenzione e per idoneità ai bambini, oppure avvii la ricerca di emergenza, che propone più defibrillatori in base all'orario, al probabile stato del defibrillatore e alla persona da soccorrere (adulto o bambino).</p>
+    <p>In caso di emergenza vitale, chiami prima di tutto il 112 o il 15 (SMS: 114). <a href="guida.it.html">Guida: questo sito, i suoi dati e i suoi limiti</a>.</p>
+  </section>
+  <noscript><p style="margin:0;padding:12px;background:#fff3cd;color:#1d1d1f;font:16px/1.4 system-ui">Questa mappa richiede JavaScript. In caso di emergenza vitale, chiami il <a href="tel:112">112</a> o il <a href="tel:15">15</a> (SMS: <a href="sms:114">114</a>).</p></noscript>
+  <div id="sim-banner" hidden role="alert">
+    <p><strong>SIMULAZIONE</strong>: <span id="sim-when"></span>. Non è la realtà.</p>
+    <p class="sim-pos">La ricerca parte da dove si trova (la sua posizione GPS), oppure dall'indirizzo o dal punto che indica con «Cambia la mia posizione».</p>
+    <button id="sim-exit" type="button">Torna alla modalità normale</button>
+  </div>
+  <div id="urgence">Emergenza: chiami prima di tutto il <a href="tel:112">112</a> o il <a href="tel:15">15</a> (SMS: <a href="sms:114">114</a>).</div>
+  <div id="quick">
+    <div class="quick-box">
+      <p class="quick-title">Trovare un defibrillatore ora (<time id="clock">--:--</time>)</p>
+      <div class="quick-row">
+        <button id="quick-adult" type="button">Per un adulto</button>
+        <button id="quick-child" type="button">Per un bambino</button>
+      </div>
+    </div>
+    <div id="posline"></div>
+  </div>
+  <div id="map-wrap">
+    <div id="map" role="region" aria-label="Mappa dei defibrillatori"></div>
+    <div id="status" role="status"></div>
+    <div id="map-ui">
+    <div id="bottom-left">
+      <button id="filters-toggle" type="button" aria-controls="filters" aria-expanded="false">Filtri</button>
+      <button id="data-toggle" type="button">Dati</button>
+      <a id="guide-toggle" href="guida.it.html"><img src="icons/favicon.svg" alt="" width="20" height="20"><span>Guida</span></a>
+    </div>
+    <div id="filters" role="group" aria-label="Legenda e filtri">
+      <div class="filters-head"><b>Legenda e filtri</b><button id="filters-close" type="button" class="sheet-close">Chiudi</button></div>
+      <fieldset>
+        <legend>Accesso (colore del punto)</legend>
+        <label><input type="checkbox" autocomplete="off" data-group="access" value="h24"><i class="dot" style="background:#1b873f"></i> <span>Accessibile 24 ore su 24, 7 giorni su 7</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="access" value="limited"><i class="dot" style="background:#e07b00"></i> <span>Orari limitati</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="access" value="unknown"><i class="dot" style="background:#1a6fd1"></i> <span>Orari sconosciuti</span></label>
+      </fieldset>
+      <fieldset>
+        <legend>Manutenzione (anello attorno al punto)</legend>
+        <label><input type="checkbox" autocomplete="off" data-group="maint" value="ok"><svg class="ring-svg" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#1b873f" stroke-width="4.5"/></svg> <span>Aggiornata</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="maint" value="unknown"><svg class="ring-svg" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#8a8a8a" stroke-width="4.5" stroke-dasharray="21.83 5.4"/></svg> <span>Non confermata</span></label>
+        <label><input type="checkbox" autocomplete="off" data-group="maint" value="doubt"><svg class="ring-svg" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#d0021b" stroke-width="4.5" stroke-dasharray="5.5 4.71"/></svg> <span>Vecchia o scaduta</span></label>
+      </fieldset>
+      <fieldset>
+        <legend>Bambini e neonati</legend>
+        <label><input type="checkbox" autocomplete="off" id="f-ped"><i class="marker-legend"><svg viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="M12 4.6a8.6 8.6 0 1 0 0 17.2 8.6 8.6 0 0 0 0-17.2zM8.6 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM15.4 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM8.3 15.9Q12 20.1 15.7 15.9Q12 18 8.3 15.9z"/><circle cx="4.1" cy="14" r="1.9" fill="#fff"/><circle cx="19.9" cy="14" r="1.9" fill="#fff"/><path d="M12 5.2c-.2-2.2 2.6-3.4 4-1.8 1 1.2-.1 2.6-1.4 2.2" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round"/></svg></i> <span>Mostra solo i pediatrici</span></label>
+        <label class="sub"><input type="checkbox" autocomplete="off" id="f-ped-unknown"><i class="marker-legend unknown"></i> <span>Mostra anche quelli incerti</span></label>
+      </fieldset>
+    </div>
+    </div>
+    <div id="results" aria-live="polite"></div>
+  </div>
+  <div id="lang-control">
+    <button id="lang-button" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Cambia lingua" title="Cambia lingua"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span class="code">IT</span></button>
+    <ul id="lang-menu" hidden>
+      <li><a href="./" lang="fr" hreflang="fr">Français</a></li>
+      <li><a href="index.de.html" lang="de" hreflang="de">Deutsch</a></li>
+      <li><a href="index.en.html" lang="en" hreflang="en">English</a></li>
+      <li><a href="index.es.html" lang="es" hreflang="es">Español</a></li>
+      <li><a href="index.it.html" lang="it" hreflang="it" aria-current="true">Italiano</a></li>
+      <li><a href="index.nl.html" lang="nl" hreflang="nl">Nederlands</a></li>
+      <li><a href="index.pt.html" lang="pt" hreflang="pt">Português</a></li>
+    </ul>
+  </div>
+  <button id="locate" type="button" aria-label="Centra la mappa sulla mia posizione" title="Centra la mappa sulla mia posizione" data-tip="Centra sulla mia posizione"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M12 1.5v4M12 18.5v4M1.5 12h4M18.5 12h4"/></svg></button>
+  <script src="vendor/leaflet/leaflet.js?v=5a640ff8"></script>
+  <div id="data-panel" role="dialog" aria-modal="true" aria-label="Dati" hidden></div>
+  <script src="js/i18n.js?v=ecf5a4b3"></script>
+  <script src="js/lang/it.js?v=b3d7b0fe"></script>
+  <script src="js/format.js?v=97edacb4"></script>
+  <script src="js/dae-view.js?v=6d6312c8"></script>
+  <script src="js/data.js?v=6272879e"></script>
+  <script src="js/places.js?v=9f8ab787"></script>
+  <script src="js/app.js?v=a48b50e0"></script>
+  <script src="js/quick.js?v=f16faa72"></script>
+</body>
+</html>
